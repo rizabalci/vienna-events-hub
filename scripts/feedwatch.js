@@ -294,13 +294,21 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
       const d = new Date(); d.setDate(d.getDate() + n);
       return d.toISOString().slice(0, 10);
     };
-    const W = plus(7), M = plus(30);
+    const W = plus(7);
+    const curMonth = TODAY.slice(0, 7);
+    const NAMES = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE',
+      'JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+    const monthLabel = ym => NAMES[+ym.slice(5, 7) - 1] + ' ' + ym.slice(0, 4);
     const buckets = [
       ['🔴 <b>TODAY</b>', fresh.filter(x => x.dt === TODAY)],
       ['📅 <b>THIS WEEK</b>', fresh.filter(x => x.dt > TODAY && x.dt <= W)],
-      ['🗓 <b>THIS MONTH</b>', fresh.filter(x => x.dt > W && x.dt <= M)],
-      ['📆 <b>FUTURE</b>', fresh.filter(x => x.dt > M)]
+      ['🗓 <b>THIS MONTH</b>', fresh.filter(x => x.dt > W && x.dt.slice(0, 7) === curMonth)]
     ];
+    // Everything further out gets its own month section — one break per month
+    const later = fresh.filter(x => x.dt > W && x.dt.slice(0, 7) !== curMonth);
+    for (const ym of [...new Set(later.map(x => x.dt.slice(0, 7)))].sort()) {
+      buckets.push([`📆 <b>${monthLabel(ym)}</b>`, later.filter(x => x.dt.slice(0, 7) === ym)]);
+    }
     const eventLines = [];
     for (const [title, items] of buckets) {
       if (!items.length) continue;
