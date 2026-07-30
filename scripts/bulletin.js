@@ -34,7 +34,7 @@ const CATS = {
   musical:    { icon: '🎤', en: 'Musicals',     de: 'Musicals' },
   theater:    { icon: '🎬', en: 'Theater',      de: 'Theater' },
   kabarett:   { icon: '😂', en: 'Kabarett',     de: 'Kabarett' },
-  exhibition: { icon: '🖼', en: 'Exhibitions',  de: 'Ausstellungen' },
+  exhibition: { icon: '🖼', en: 'Museums & Exhibitions', de: 'Museen & Ausstellungen' },
   activity:   { icon: '🎳', en: 'Activities',   de: 'Aktivitäten' },
   tour:       { icon: '🚶', en: 'Tours',        de: 'Touren' },
   club:       { icon: '🤝', en: 'Clubs & Groups', de: 'Vereine & Gruppen' },
