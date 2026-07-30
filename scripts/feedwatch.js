@@ -38,6 +38,21 @@ function monthSlug(offset) {
   return `${names[d.getMonth()]}-${d.getFullYear()}`;
 }
 
+// ── Artist watchlist ─────────────────────────────────────────
+// New finds matching these names get a ⭐ WATCHLIST section at the top of
+// the notification. Edit freely (GitHub pencil icon) — plain names, any case,
+// Turkish characters fine.
+const WATCHLIST = [
+  'Tarkan', 'Sezen Aksu', 'Sertab Erener', 'Teoman', 'Duman', 'maNga',
+  'Mor ve Ötesi', 'Şebnem Ferah', 'Cem Adrian', 'Mabel Matiz', 'Zeynep Bastık',
+  'Edis', 'Simge', 'Melike Şahin', 'Gaye Su Akyol', 'Altın Gün',
+  'Derya Yıldırım', 'BaBa ZuLa', 'Mercan Dede', 'Emir Can İğrek', 'Haftbefehl'
+];
+const foldName = s => String(s).toLowerCase().replace(/ı/g, 'i')
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
+const WATCH_FOLDED = WATCHLIST.map(foldName);
+const isWatch = ev => { const n = foldName(ev.n); return WATCH_FOLDED.some(w => n.includes(w)); };
+
 const SOURCES = [
   { type: 'songkick', name: 'Songkick Vienna (upcoming)',
     url: 'https://www.songkick.com/metro-areas/26771-austria-vienna' },
@@ -91,15 +106,18 @@ function parseSongkick(html) {
   const blocks = html.split('event-listings-element').slice(1);
   for (const block of blocks) {
     const chunk = block.slice(0, 3000);
-    const dt = (chunk.match(/datetime="(\d{4}-\d{2}-\d{2})/) || [])[1];
+    const dm = chunk.match(/datetime="(\d{4}-\d{2}-\d{2})(?:T(\d{2}):(\d{2}))?/);
+    const dt = dm && dm[1];
+    const tm = dm && dm[2] && !(dm[2] === '00' && dm[3] === '00') ? dm[2] + ':' + dm[3] : null;
     const link = (chunk.match(/href="(\/(?:concerts|festivals)\/[^"]+)"/) || [])[1];
     const name = (chunk.match(/<strong>([^<]+)<\/strong>/) || [])[1];
-    const venue = (chunk.match(/href="\/venues\/\d+[^"]*"[^>]*>([^<]+)</) || [])[1];
+    const venueRaw = (chunk.match(/href="\/venues\/\d+[^"]*"[^>]*>([^<]+)</) || [])[1];
     if (!dt || !link || !name) continue;
+    const venue = venueRaw ? decodeEntities(venueRaw) : '';
     out.push({
       n: decodeEntities(name),
       dt,
-      v: venue ? decodeEntities(venue) : '',
+      v: tm ? (venue ? tm + ' · ' + venue : tm) : venue,
       c: 'concert',
       p: '',
       u: 'songkick.com',
@@ -120,14 +138,16 @@ function parseICalSource(text) {
     const get = p => (body.match(new RegExp('^' + p + '(?:;[^:\\n]*)?:(.*)$', 'mi')) || [])[1];
     const raw = get('DTSTART');
     const sum = get('SUMMARY');
-    const m = raw && String(raw).match(/^(\d{4})(\d{2})(\d{2})/);
+    const m = raw && String(raw).match(/^(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2}))?/);
     if (!m || !sum) continue;
     const dt = `${m[1]}-${m[2]}-${m[3]}`;
     if (dt < TODAY) continue;
+    const tm = m[4] && !/Z$/.test(raw) ? m[4] + ':' + m[5] : null;
     const url = get('URL');
+    const loc = decodeEntities((get('LOCATION') || '').replace(/\\,/g, ','));
     out.push({
       n: decodeEntities(sum.replace(/\\,/g, ',')), dt,
-      v: decodeEntities((get('LOCATION') || '').replace(/\\,/g, ',')),
+      v: tm ? (loc ? tm + ' · ' + loc : tm) : loc,
       c: 'concert', p: '', u: '',
       eu: url && /^https?:/.test(url) ? url.trim() : undefined,
       desc: { en: '', de: '' }, t: ['feed', 'ical']
@@ -282,14 +302,21 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
   }
 
   // 5. Notify
-  const fmt = d => { const [y, m, dd] = d.split('-'); return `${dd}.${m}.`; };
+  const WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const fmt = d => {
+    const [y, m, dd] = d.split('-');
+    return `${WD[new Date(Date.UTC(+y, +m - 1, +dd)).getUTCDay()]} ${dd}.${m}.`;
+  };
   if (fresh.length) {
     const header = `🔎 <b>Feed Watch</b> — ${fresh.length} new event${fresh.length > 1 ? 's' : ''} found`;
     const footer = '📥 Review: <a href="https://github.com/rizabalci/vienna-events-hub/edit/main/data/pending.json">pending.json</a> → copy keepers into community.json, delete the rest.';
     const line = x => {
       const range = x.de && x.de !== x.dt ? `${fmt(x.dt)}–${fmt(x.de)}` : fmt(x.dt);
-      return `• ${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}`;
+      const star = isWatch(x) ? '⭐ ' : '';
+      return `• ${star}${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}`;
     };
+    const watchHits = fresh.filter(isWatch);
+    if (watchHits.length) console.log(`Watchlist hits: ${watchHits.map(x => x.n).join(', ')}`);
     const plus = n => {
       const d = new Date(); d.setDate(d.getDate() + n);
       return d.toISOString().slice(0, 10);
@@ -300,6 +327,7 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
       'JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
     const monthLabel = ym => NAMES[+ym.slice(5, 7) - 1] + ' ' + ym.slice(0, 4);
     const buckets = [
+      ['⭐ <b>WATCHLIST</b>', watchHits],
       ['🔴 <b>TODAY</b>', fresh.filter(x => x.dt === TODAY)],
       ['📅 <b>THIS WEEK</b>', fresh.filter(x => x.dt > TODAY && x.dt <= W)],
       ['🗓 <b>THIS MONTH</b>', fresh.filter(x => x.dt > W && x.dt.slice(0, 7) === curMonth)]
