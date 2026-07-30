@@ -231,6 +231,16 @@ async function notify(messages) {
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
+function mapsUrl(ev) {
+  let v = String(ev.v || '').replace(/^\d{1,2}:\d{2}\s*·\s*/, '');
+  if (!v || /various|across vienna|wandering|parks and|tba|and squares/i.test(v)) return null;
+  if (!/wien|vienna/i.test(v)) v += ', Wien';
+  const home = (process.env.HOME_ADDRESS || '').trim();
+  const origin = home ? `origin=${encodeURIComponent(home)}&` : '';
+  return `https://www.google.com/maps/dir/?api=1&${origin}destination=${encodeURIComponent(v)}&travelmode=transit`;
+}
+const musicUrl = ev => 'https://open.spotify.com/search/' + encodeURIComponent(String(ev.n).trim());
+
 // ── Main ──────────────────────────────────────────────────────
 (async () => {
   // 1. Gather candidates from all sources, tolerating individual failures
@@ -339,7 +349,9 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
     const line = x => {
       const range = x.de && x.de !== x.dt ? `${fmt(x.dt)}–${fmt(x.de)}` : fmt(x.dt);
       const star = isWatch(x) ? '⭐ ' : (isTurkishGuess(x) ? '🔸 ' : '');
-      return `• ${star}${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}`;
+      const mu = mapsUrl(x);
+      const extras = (mu ? ` · <a href="${esc(mu)}">🗺</a>` : '') + ` · <a href="${esc(musicUrl(x))}">🎵</a>`;
+      return `• ${star}${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}${extras}`;
     };
     const watchHits = fresh.filter(x => isWatch(x) || isTurkishGuess(x));
     if (watchHits.length) console.log(`Watchlist hits: ${watchHits.map(x => x.n).join(', ')}`);
