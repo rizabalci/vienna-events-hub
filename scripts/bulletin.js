@@ -36,6 +36,8 @@ const CATS = {
   kabarett:   { icon: '😂', en: 'Kabarett',     de: 'Kabarett' },
   exhibition: { icon: '🖼', en: 'Exhibitions',  de: 'Ausstellungen' },
   activity:   { icon: '🎳', en: 'Activities',   de: 'Aktivitäten' },
+  tour:       { icon: '🚶', en: 'Tours',        de: 'Touren' },
+  club:       { icon: '🤝', en: 'Clubs & Groups', de: 'Vereine & Gruppen' },
   ball:       { icon: '💃', en: 'Balls',        de: 'Bälle' },
   special:    { icon: '✨', en: 'Special',      de: 'Specials' },
   sport:      { icon: '⚽️', en: 'Sport',        de: 'Sport' },
@@ -445,7 +447,17 @@ function buildMessage(b, today, lang) {
     return parts.join('\n');
   }
 
-  parts.push(...section(b.today, L.today, lang, CAPS.today, false));
+  // TODAY always opens the bulletin. With no one-off events dated today,
+  // it points honestly at the continuous programs instead of vanishing.
+  if (b.today.length) {
+    parts.push(...section(b.today, L.today, lang, CAPS.today, false));
+  } else {
+    parts.push(`${L.today} <b>(0)</b>`, '');
+    const n = b.ongoing.length;
+    parts.push(lang === 'de'
+      ? `  <i>Keine Einzeltermine heute — aber ${n} Programme laufen, siehe ♾ GANZJÄHRIG unten.</i>`
+      : `  <i>No one-off events today — but ${n} programs are running, see ♾ ALL YEAR LONG below.</i>`, '');
+  }
   parts.push(...section(b.week,  L.week,  lang, CAPS.week));
   parts.push(...section(b.month, L.month, lang, CAPS.month));
   parts.push(...section(b.later, L.later, lang, CAPS.later));
