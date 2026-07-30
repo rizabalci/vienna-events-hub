@@ -10,7 +10,6 @@
  *   TELEGRAM_CHAT_ID
  * Optional:
  *   LANG_MODE   'en' (default) or 'de'
- *   DAYS_AHEAD  number of days to look forward (default 7)
  *   DRY_RUN     'true' to print instead of sending
  */
 
@@ -21,7 +20,6 @@ const ROOT = path.join(__dirname, '..');
 const HTML = path.join(ROOT, 'index.html');
 
 const LANG = (process.env.LANG_MODE || 'en').toLowerCase() === 'de' ? 'de' : 'en';
-const DAYS_AHEAD = parseInt(process.env.DAYS_AHEAD || '7', 10);
 const DRY_RUN = String(process.env.DRY_RUN || '').toLowerCase() === 'true';
 
 // ── Category labels & icons ───────────────────────────────────
@@ -100,9 +98,10 @@ function parseISO(s) {
 }
 
 function fmtDate(date, lang) {
-  return date.toLocaleDateString(lang === 'de' ? 'de-AT' : 'en-GB', {
-    weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC'
-  });
+  const opts = { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' };
+  // Only show the year when it isn't the current one, to avoid "27 Jun" meaning next year
+  if (date.getUTCFullYear() !== new Date().getUTCFullYear()) opts.year = 'numeric';
+  return date.toLocaleDateString(lang === 'de' ? 'de-AT' : 'en-GB', opts);
 }
 
 // ── Telegram-safe escaping (HTML parse mode) ──────────────────
@@ -113,100 +112,166 @@ function esc(s) {
     .replace(/>/g, '&gt;');
 }
 
-// ── Select events in the window ───────────────────────────────
-function selectWindow(events, from, days) {
-  const to = new Date(from.getTime() + days * 86400000);
+// ── Bucket events into time horizons ──────────────────────────
+// Anything running longer than this is treated as "continuous" rather than
+// an event that happens on a day, so exhibitions don't swamp the daily lists.
+const LONG_RUN_DAYS = 14;
+
+function bucket(events, today) {
+  const day = 86400000;
+  const weekEnd  = new Date(today.getTime() + 7 * day);
+  const monthEnd = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() + 1, 0));
+  const horizon  = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth() + 4, 0));
+
+  const out = { today: [], week: [], month: [], later: [], ongoing: [] };
+
+  for (const ev of events) {
+    if (!ev || !ev.dt) continue;
+    const s = parseISO(ev.dt);
+    const e = ev.de ? parseISO(ev.de) : s;
+    if (isNaN(s) || isNaN(e)) continue;
+    if (e < today) continue;                 // already finished
+    if (s > horizon) continue;               // beyond the 3-month horizon
+
+    const runsFor = Math.round((e - s) / day) + 1;
+
+    // Long runs that are already under way are "continuous"
+    if (runsFor > LONG_RUN_DAYS && s <= today) { out.ongoing.push(ev); continue; }
+
+    if (s <= today && e >= today) out.today.push(ev);
+    else if (s <= weekEnd)        out.week.push(ev);
+    else if (s <= monthEnd)       out.month.push(ev);
+    else                          out.later.push(ev);
+  }
+
   const byDate = (a, b) => {
     const d = parseISO(a.dt) - parseISO(b.dt);
     return d !== 0 ? d : String(a.n).localeCompare(String(b.n));
   };
+  const byEnd = (a, b) => {
+    const ae = a.de ? parseISO(a.de) : parseISO(a.dt);
+    const be = b.de ? parseISO(b.de) : parseISO(b.dt);
+    return ae - be;   // soonest to close first — the ones worth catching
+  };
 
-  const starting = [];  // kicks off during the window — the real news
-  const ongoing = [];   // already running, still catchable
-
-  for (const ev of events) {
-    if (!ev || !ev.dt) continue;
-    const startD = parseISO(ev.dt);
-    const endD = ev.de ? parseISO(ev.de) : startD;
-    if (isNaN(startD) || isNaN(endD)) continue;
-    if (endD < from || startD >= to) continue;   // outside the window
-
-    if (startD >= from) starting.push(ev);
-    else ongoing.push(ev);
-  }
-
-  return { starting: starting.sort(byDate), ongoing: ongoing.sort(byDate) };
+  for (const k of ['today', 'week', 'month', 'later']) out[k].sort(byDate);
+  out.ongoing.sort(byEnd);
+  return out;
 }
 
 // ── Build the message ─────────────────────────────────────────
-const PER_CAT = 6;   // max events listed per category before collapsing
+// ── Links ─────────────────────────────────────────────────────
+function infoUrl(ev) {
+  if (ev.u) {
+    const u = String(ev.u).trim();
+    if (/^https?:\/\//i.test(u)) return u;
+    return 'https://' + u.replace(/^\/+/, '');
+  }
+  return searchUrl(ev);
+}
 
-function line(ev, lang) {
-  const d = fmtDate(parseISO(ev.dt), lang);
-  const multi = ev.de && ev.de !== ev.dt ? ` → ${fmtDate(parseISO(ev.de), lang)}` : '';
+// Ticket search — works for any event without needing a per-event ticket URL
+function searchUrl(ev) {
+  const name = String(ev.n || '');
+  const venue = String(ev.v || '');
+  // Don't repeat the venue if the title already contains it
+  const needsVenue = venue && !name.toLowerCase().includes(venue.toLowerCase());
+  const q = encodeURIComponent(`${name}${needsVenue ? ' ' + venue : ''} Wien tickets`.trim());
+  return `https://www.google.com/search?q=${q}`;
+}
+
+// ── Rendering ─────────────────────────────────────────────────
+const CAPS = { today: 15, week: 25, month: 25, later: 20, ongoing: 12 };
+
+function evLine(ev, lang, showDate) {
   const bits = [];
-  if (ev.v) bits.push(esc(ev.v));
-  if (ev.p) bits.push(esc(ev.p));
-  const sub = bits.length ? `\n     <i>${bits.join(' · ')}</i>` : '';
-  return `  <b>${esc(d + multi)}</b>  ${esc(ev.n)}${sub}`;
+  if (showDate) {
+    const d = fmtDate(parseISO(ev.dt), lang);
+    const multi = ev.de && ev.de !== ev.dt ? ` → ${fmtDate(parseISO(ev.de), lang)}` : '';
+    bits.push(`<b>${esc(d + multi)}</b>`);
+  }
+  const name = `<a href="${esc(infoUrl(ev))}">${esc(ev.n)}</a>`;
+  const head = bits.length ? `  ${bits[0]}  ${name}` : `  • ${name}`;
+
+  const sub = [];
+  if (ev.v) sub.push(esc(ev.v));
+  if (ev.p) sub.push(esc(ev.p));
+  sub.push(`<a href="${esc(searchUrl(ev))}">🎫</a>`);
+  return `${head}\n     <i>${sub.join(' · ')}</i>`;
 }
 
-function groupByCat(list) {
-  const groups = new Map();
-  for (const ev of list) {
-    const key = CATS[ev.c] ? ev.c : 'other';
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(ev);
+function section(list, title, lang, cap, showDate = true) {
+  if (!list.length) return [];
+  const parts = [`${title} <b>(${list.length})</b>`];
+
+  // Group by category so long sections stay readable
+  if (list.length > 6) {
+    const groups = new Map();
+    for (const ev of list) {
+      const k = CATS[ev.c] ? ev.c : 'other';
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(ev);
+    }
+    let shown = 0;
+    for (const k of Object.keys(CATS).filter(x => groups.has(x))) {
+      if (shown >= cap) break;
+      const g = groups.get(k);
+      parts.push(`\n${CATS[k].icon} <i>${esc(CATS[k][lang])}</i>`);
+      for (const ev of g) {
+        if (shown >= cap) break;
+        parts.push(evLine(ev, lang, showDate));
+        shown++;
+      }
+    }
+    if (list.length > shown) {
+      const rest = list.length - shown;
+      parts.push(lang === 'de' ? `  <i>… und ${rest} weitere</i>` : `  <i>… and ${rest} more</i>`);
+    }
+  } else {
+    for (const ev of list.slice(0, cap)) parts.push(evLine(ev, lang, showDate));
   }
-  return groups;
+  parts.push('');
+  return parts;
 }
 
-function buildMessage({ starting, ongoing }, from, days, lang) {
-  const to = new Date(from.getTime() + (days - 1) * 86400000);
-  const range = `${fmtDate(from, lang)} – ${fmtDate(to, lang)}`;
+function ongoingLine(ev, lang) {
+  const word = lang === 'de' ? 'bis' : 'until';
+  const until = ev.de ? ` <i>(${word} ${fmtDate(parseISO(ev.de), lang)})</i>` : '';
+  const name = `<a href="${esc(infoUrl(ev))}">${esc(ev.n)}</a>`;
+  const venue = ev.v ? ` <i>· ${esc(ev.v)}</i>` : '';
+  return `  • ${name}${until}${venue}`;
+}
 
-  const head = lang === 'de'
-    ? `<b>🎪 Wien Events — Woche im Überblick</b>\n<i>${esc(range)}</i>`
-    : `<b>🎪 Vienna Events — Week Ahead</b>\n<i>${esc(range)}</i>`;
+function buildMessage(b, today, lang) {
+  const L = lang === 'de' ? {
+    head: '🎪 <b>Wien Events</b>', today: '🔴 <b>HEUTE</b>', week: '📅 <b>DIESE WOCHE</b>',
+    month: '🗓 <b>DIESEN MONAT</b>', later: '📆 <b>NÄCHSTE 3 MONATE</b>',
+    ongoing: '♾ <b>LÄUFT DURCHGEHEND</b>', none: 'Keine Events gefunden.',
+    tip: 'Namen antippen für Infos · 🎫 für Tickets', more: n => `  <i>… und ${n} weitere</i>`
+  } : {
+    head: '🎪 <b>Vienna Events</b>', today: '🔴 <b>TODAY</b>', week: '📅 <b>THIS WEEK</b>',
+    month: '🗓 <b>THIS MONTH</b>', later: '📆 <b>NEXT 3 MONTHS</b>',
+    ongoing: '♾ <b>RUNNING CONTINUOUSLY</b>', none: 'No events found.',
+    tip: 'Tap a name for info · 🎫 for tickets', more: n => `  <i>… and ${n} more</i>`
+  };
 
-  if (!starting.length && !ongoing.length) {
-    const none = lang === 'de'
-      ? 'Keine Events in diesem Zeitraum. Zeit, den Kalender aufzufüllen.'
-      : 'No events in this window. Time to top up the calendar.';
-    return `${head}\n\n${none}\n\n🔗 https://rizabalci.github.io/vienna-events-hub/`;
+  const total = b.today.length + b.week.length + b.month.length + b.later.length + b.ongoing.length;
+  const parts = [`${L.head}  <i>${esc(fmtDate(today, lang))}</i>`, `<i>${L.tip}</i>`, ''];
+
+  if (!total) {
+    parts.push(L.none, '', '🔗 https://rizabalci.github.io/vienna-events-hub/');
+    return parts.join('\n');
   }
 
-  const parts = [head, ''];
-  const groups = groupByCat(starting);
+  parts.push(...section(b.today, L.today, lang, CAPS.today, false));
+  parts.push(...section(b.week,  L.week,  lang, CAPS.week));
+  parts.push(...section(b.month, L.month, lang, CAPS.month));
+  parts.push(...section(b.later, L.later, lang, CAPS.later));
 
-  parts.push(lang === 'de'
-    ? `<b>${starting.length}</b> neue Events in <b>${groups.size}</b> Kategorien\n`
-    : `<b>${starting.length}</b> events starting across <b>${groups.size}</b> categories\n`);
-
-  for (const key of Object.keys(CATS).filter(k => groups.has(k))) {
-    const meta = CATS[key];
-    const list = groups.get(key);
-    parts.push(`${meta.icon} <b>${esc(meta[lang])}</b> (${list.length})`);
-    for (const ev of list.slice(0, PER_CAT)) parts.push(line(ev, lang));
-    if (list.length > PER_CAT) {
-      const rest = list.length - PER_CAT;
-      parts.push(lang === 'de' ? `  <i>… und ${rest} weitere</i>` : `  <i>… and ${rest} more</i>`);
-    }
-    parts.push('');
-  }
-
-  // Ongoing: compact one-liners, no venue/price clutter
-  if (ongoing.length) {
-    parts.push(lang === 'de' ? '<b>▪️ Läuft bereits</b>' : '<b>▪️ Already running</b>');
-    for (const ev of ongoing.slice(0, 10)) {
-      const word = lang === 'de' ? 'bis' : 'until';
-      const until = ev.de ? ` <i>(${word} ${fmtDate(parseISO(ev.de), lang)})</i>` : '';
-      parts.push(`  • ${esc(ev.n)}${until}`);
-    }
-    if (ongoing.length > 10) {
-      const rest = ongoing.length - 10;
-      parts.push(lang === 'de' ? `  <i>… und ${rest} weitere</i>` : `  <i>… and ${rest} more</i>`);
-    }
+  if (b.ongoing.length) {
+    parts.push(`${L.ongoing} <b>(${b.ongoing.length})</b>`);
+    for (const ev of b.ongoing.slice(0, CAPS.ongoing)) parts.push(ongoingLine(ev, lang));
+    if (b.ongoing.length > CAPS.ongoing) parts.push(L.more(b.ongoing.length - CAPS.ongoing));
     parts.push('');
   }
 
@@ -277,12 +342,23 @@ async function send(text) {
   const me = await tgCall(token, 'getMe', {});
   console.log(`Authenticated as @${me.result.username}`);
 
+  // Telegram's 4096 limit applies to the visible text, not the HTML markup,
+  // so measure with tags stripped. Splitting only on newlines keeps every
+  // tag pair intact within a chunk.
+  const visibleLen = s => s.replace(/<[^>]+>/g, '').length;
+  const RAW_LIMIT = 9000;      // hard ceiling on payload size
+  const VIS_LIMIT = 3500;      // safety margin under Telegram's 4096
+
   const chunks = [];
-  const LIMIT = 3800;
   let buf = '';
   for (const line of text.split('\n')) {
-    if (buf.length + line.length + 1 > LIMIT) { chunks.push(buf); buf = ''; }
-    buf += (buf ? '\n' : '') + line;
+    const next = buf ? buf + '\n' + line : line;
+    if (buf && (visibleLen(next) > VIS_LIMIT || next.length > RAW_LIMIT)) {
+      chunks.push(buf);
+      buf = line;
+    } else {
+      buf = next;
+    }
   }
   if (buf) chunks.push(buf);
 
@@ -317,10 +393,11 @@ async function send(text) {
       today = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate()));
     }
 
-    const picked = selectWindow(all, today, DAYS_AHEAD);
-    console.log(`${picked.starting.length} starting, ${picked.ongoing.length} ongoing over the next ${DAYS_AHEAD} days`);
+    const b = bucket(all, today);
+    console.log(`today:${b.today.length} week:${b.week.length} month:${b.month.length} ` +
+      `next3mo:${b.later.length} ongoing:${b.ongoing.length}`);
 
-    await send(buildMessage(picked, today, DAYS_AHEAD, LANG));
+    await send(buildMessage(b, today, LANG));
     console.log('Done.');
   } catch (err) {
     console.error('Failed:', describe(err));
