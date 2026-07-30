@@ -340,9 +340,9 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
     const eventLines = [];
     for (const [title, items] of buckets) {
       if (!items.length) continue;
-      if (eventLines.length) eventLines.push('');
-      eventLines.push(`${title} (${items.length})`);
-      for (const x of items) eventLines.push(line(x));
+      if (eventLines.length && eventLines[eventLines.length - 1] !== '') eventLines.push('');
+      eventLines.push(`${title} (${items.length})`, '');
+      for (const x of items) eventLines.push(line(x), '');
     }
     // Split into as many messages as needed — every find gets shown
     const LIMIT = 3600;
