@@ -408,19 +408,23 @@ function buildMessage(b, today, lang) {
     head: '🎪 <b>Wien Events</b>', today: '🔴 <b>HEUTE</b>', week: '📅 <b>DIESE WOCHE</b>',
     month: '🗓 <b>DIESEN MONAT</b>', later: '📆 <b>NÄCHSTE 3 MONATE</b>',
     ongoing: '♾ <b>LÄUFT DURCHGEHEND</b>', none: 'Keine Events gefunden.',
-    tip: '🎟 Direkte Event-Seite · 🔍 Suche · 🏛 Venue', more: n => `  <i>… und ${n} weitere</i>`
+    tip: '🎟 Direkte Event-Seite · 🔍 Suche · 🏛 Venue',
+    site: '🌐 <b><a href="https://rizabalci.github.io/vienna-events-hub/">Alle Events ansehen — Vienna Events Hub</a></b>\n<i>Suche, Filter nach Kategorie und Datum, Merkliste</i>',
+    more: n => `  <i>… und ${n} weitere</i>`
   } : {
     head: '🎪 <b>Vienna Events</b>', today: '🔴 <b>TODAY</b>', week: '📅 <b>THIS WEEK</b>',
     month: '🗓 <b>THIS MONTH</b>', later: '📆 <b>NEXT 3 MONTHS</b>',
     ongoing: '♾ <b>RUNNING CONTINUOUSLY</b>', none: 'No events found.',
-    tip: '🎟 direct event page · 🔍 search · 🏛 venue', more: n => `  <i>… and ${n} more</i>`
+    tip: '🎟 direct event page · 🔍 search · 🏛 venue',
+    site: '🌐 <b><a href="https://rizabalci.github.io/vienna-events-hub/">See all events — Vienna Events Hub</a></b>\n<i>Search, filter by category and date, save favourites</i>',
+    more: n => `  <i>… and ${n} more</i>`
   };
 
   const total = b.today.length + b.week.length + b.month.length + b.later.length + b.ongoing.length;
   const parts = [`${L.head}  <i>${esc(fmtDate(today, lang))}</i>`, `<i>${L.tip}</i>`, ''];
 
   if (!total) {
-    parts.push(L.none, '', '🔗 https://rizabalci.github.io/vienna-events-hub/');
+    parts.push(L.none, '', L.site);
     return parts.join('\n');
   }
 
@@ -451,7 +455,7 @@ function buildMessage(b, today, lang) {
     if (b.ongoing.length > shown) parts.push(L.more(b.ongoing.length - shown), '');
   }
 
-  parts.push('🔗 https://rizabalci.github.io/vienna-events-hub/');
+  parts.push(L.site);
   return parts.join('\n');
 }
 
