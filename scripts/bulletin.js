@@ -10,6 +10,7 @@
  *   TELEGRAM_CHAT_ID
  * Optional:
  *   LANG_MODE   'en' (default) or 'de'
+ *   MAX_PER_SECTION  cap events listed per section (default: no cap)
  *   DRY_RUN     'true' to print instead of sending
  */
 
@@ -161,27 +162,57 @@ function bucket(events, today) {
 
 // ── Build the message ─────────────────────────────────────────
 // ── Links ─────────────────────────────────────────────────────
+// Priority: a real per-event page, then a targeted search that lands on one.
+// A bare venue homepage is deliberately NOT used as the primary link — it
+// doesn't tell you anything about the specific event.
 function infoUrl(ev) {
-  if (ev.u) {
-    const u = String(ev.u).trim();
-    if (/^https?:\/\//i.test(u)) return u;
-    return 'https://' + u.replace(/^\/+/, '');
-  }
+  if (ev.eu) return String(ev.eu).trim();          // direct event page
   return searchUrl(ev);
 }
 
-// Ticket search — works for any event without needing a per-event ticket URL
+function hasDirect(ev) { return Boolean(ev.eu); }
+
+// Verified section pages, better than a bare domain for the 🏛 link.
+// Only entries confirmed during research — no guessed paths.
+const VENUE_PAGES = {
+  'albertina.at': 'https://www.albertina.at/en/exhibitions/',
+  'belvedere.at': 'https://www.belvedere.at/en/current-exhibitions'
+};
+
+function venueUrl(ev) {
+  if (!ev.u) return null;
+  const u = String(ev.u).trim().replace(/^https?:\/\//i, '').replace(/^www\./i, '').replace(/\/.*$/, '');
+  if (VENUE_PAGES[u]) return VENUE_PAGES[u];
+  const raw = String(ev.u).trim();
+  return /^https?:\/\//i.test(raw) ? raw : 'https://' + raw.replace(/^\/+/, '');
+}
+
+// Targeted search — reliably lands on the event's own page in one click
 function searchUrl(ev) {
   const name = String(ev.n || '');
   const venue = String(ev.v || '');
-  // Don't repeat the venue if the title already contains it
   const needsVenue = venue && !name.toLowerCase().includes(venue.toLowerCase());
-  const q = encodeURIComponent(`${name}${needsVenue ? ' ' + venue : ''} Wien tickets`.trim());
-  return `https://www.google.com/search?q=${q}`;
+
+  // Exhibitions and long runs: no ticket wording, no start month (it's stale).
+  // Dated events: include the month to disambiguate recurring shows.
+  const longRun = ev.de && ev.de !== ev.dt;
+  const isShow = ev.c === 'exhibition';
+  const suffix = isShow ? 'exhibition' : 'tickets';
+  const when = (!isShow && !longRun && ev.dt) ? ' ' + String(ev.dt).slice(0, 7) : '';
+
+  const q = encodeURIComponent(
+    `${name}${needsVenue ? ' ' + venue : ''} Wien${when} ${suffix}`.trim()
+  );
+  return `https://duckduckgo.com/?q=${q}`;
 }
 
 // ── Rendering ─────────────────────────────────────────────────
-const CAPS = { today: 15, week: 25, month: 25, later: 20, ongoing: 12 };
+// No limit by default — set MAX_PER_SECTION to trim long sections if wanted.
+const MAX_PER_SECTION = parseInt(process.env.MAX_PER_SECTION || '0', 10) || Infinity;
+const CAPS = {
+  today: MAX_PER_SECTION, week: MAX_PER_SECTION, month: MAX_PER_SECTION,
+  later: MAX_PER_SECTION, ongoing: MAX_PER_SECTION
+};
 
 function evLine(ev, lang, showDate) {
   const bits = [];
@@ -196,41 +227,43 @@ function evLine(ev, lang, showDate) {
   const sub = [];
   if (ev.v) sub.push(esc(ev.v));
   if (ev.p) sub.push(esc(ev.p));
-  sub.push(`<a href="${esc(searchUrl(ev))}">🎫</a>`);
+
+  // 🎟 = link goes straight to the event page. 🔍 = search that finds it.
+  sub.push(`<a href="${esc(infoUrl(ev))}">${hasDirect(ev) ? '🎟' : '🔍'}</a>`);
+  const vu = venueUrl(ev);
+  if (vu) sub.push(`<a href="${esc(vu)}">🏛</a>`);
+
   return `${head}\n     <i>${sub.join(' · ')}</i>`;
 }
 
 function section(list, title, lang, cap, showDate = true) {
   if (!list.length) return [];
-  const parts = [`${title} <b>(${list.length})</b>`];
+  const parts = [`${title} <b>(${list.length})</b>`, ''];
 
-  // Group by category so long sections stay readable
-  if (list.length > 6) {
-    const groups = new Map();
-    for (const ev of list) {
-      const k = CATS[ev.c] ? ev.c : 'other';
-      if (!groups.has(k)) groups.set(k, []);
-      groups.get(k).push(ev);
-    }
-    let shown = 0;
-    for (const k of Object.keys(CATS).filter(x => groups.has(x))) {
-      if (shown >= cap) break;
-      const g = groups.get(k);
-      parts.push(`\n${CATS[k].icon} <i>${esc(CATS[k][lang])}</i>`);
-      for (const ev of g) {
-        if (shown >= cap) break;
-        parts.push(evLine(ev, lang, showDate));
-        shown++;
-      }
-    }
-    if (list.length > shown) {
-      const rest = list.length - shown;
-      parts.push(lang === 'de' ? `  <i>… und ${rest} weitere</i>` : `  <i>… and ${rest} more</i>`);
-    }
-  } else {
-    for (const ev of list.slice(0, cap)) parts.push(evLine(ev, lang, showDate));
+  // Always group by type, so each section reads as labelled blocks
+  const groups = new Map();
+  for (const ev of list) {
+    const k = CATS[ev.c] ? ev.c : 'other';
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(ev);
   }
-  parts.push('');
+
+  let shown = 0;
+  for (const k of Object.keys(CATS).filter(x => groups.has(x))) {
+    if (shown >= cap) break;
+    const g = groups.get(k);
+    parts.push(`${CATS[k].icon} <b>${esc(CATS[k][lang])}</b> <i>(${g.length})</i>`, '');
+    for (const ev of g) {
+      if (shown >= cap) break;
+      parts.push(evLine(ev, lang, showDate), '');   // blank line after each event
+      shown++;
+    }
+  }
+
+  if (list.length > shown) {
+    const rest = list.length - shown;
+    parts.push(lang === 'de' ? `  <i>… und ${rest} weitere</i>` : `  <i>… and ${rest} more</i>`, '');
+  }
   return parts;
 }
 
@@ -238,8 +271,12 @@ function ongoingLine(ev, lang) {
   const word = lang === 'de' ? 'bis' : 'until';
   const until = ev.de ? ` <i>(${word} ${fmtDate(parseISO(ev.de), lang)})</i>` : '';
   const name = `<a href="${esc(infoUrl(ev))}">${esc(ev.n)}</a>`;
-  const venue = ev.v ? ` <i>· ${esc(ev.v)}</i>` : '';
-  return `  • ${name}${until}${venue}`;
+  const bits = [];
+  if (ev.v) bits.push(esc(ev.v));
+  const vu = venueUrl(ev);
+  if (vu) bits.push(`<a href="${esc(vu)}">🏛</a>`);
+  const tail = bits.length ? ` <i>· ${bits.join(' · ')}</i>` : '';
+  return `  • ${name}${until}${tail}`;
 }
 
 function buildMessage(b, today, lang) {
@@ -247,12 +284,12 @@ function buildMessage(b, today, lang) {
     head: '🎪 <b>Wien Events</b>', today: '🔴 <b>HEUTE</b>', week: '📅 <b>DIESE WOCHE</b>',
     month: '🗓 <b>DIESEN MONAT</b>', later: '📆 <b>NÄCHSTE 3 MONATE</b>',
     ongoing: '♾ <b>LÄUFT DURCHGEHEND</b>', none: 'Keine Events gefunden.',
-    tip: 'Namen antippen für Infos · 🎫 für Tickets', more: n => `  <i>… und ${n} weitere</i>`
+    tip: '🎟 Direkte Event-Seite · 🔍 Suche · 🏛 Venue', more: n => `  <i>… und ${n} weitere</i>`
   } : {
     head: '🎪 <b>Vienna Events</b>', today: '🔴 <b>TODAY</b>', week: '📅 <b>THIS WEEK</b>',
     month: '🗓 <b>THIS MONTH</b>', later: '📆 <b>NEXT 3 MONTHS</b>',
     ongoing: '♾ <b>RUNNING CONTINUOUSLY</b>', none: 'No events found.',
-    tip: 'Tap a name for info · 🎫 for tickets', more: n => `  <i>… and ${n} more</i>`
+    tip: '🎟 direct event page · 🔍 search · 🏛 venue', more: n => `  <i>… and ${n} more</i>`
   };
 
   const total = b.today.length + b.week.length + b.month.length + b.later.length + b.ongoing.length;
@@ -269,10 +306,25 @@ function buildMessage(b, today, lang) {
   parts.push(...section(b.later, L.later, lang, CAPS.later));
 
   if (b.ongoing.length) {
-    parts.push(`${L.ongoing} <b>(${b.ongoing.length})</b>`);
-    for (const ev of b.ongoing.slice(0, CAPS.ongoing)) parts.push(ongoingLine(ev, lang));
-    if (b.ongoing.length > CAPS.ongoing) parts.push(L.more(b.ongoing.length - CAPS.ongoing));
-    parts.push('');
+    parts.push(`${L.ongoing} <b>(${b.ongoing.length})</b>`, '');
+    const groups = new Map();
+    for (const ev of b.ongoing) {
+      const k = CATS[ev.c] ? ev.c : 'other';
+      if (!groups.has(k)) groups.set(k, []);
+      groups.get(k).push(ev);
+    }
+    let shown = 0;
+    for (const k of Object.keys(CATS).filter(x => groups.has(x))) {
+      if (shown >= CAPS.ongoing) break;
+      const g = groups.get(k);
+      parts.push(`${CATS[k].icon} <b>${esc(CATS[k][lang])}</b> <i>(${g.length})</i>`, '');
+      for (const ev of g) {
+        if (shown >= CAPS.ongoing) break;
+        parts.push(ongoingLine(ev, lang), '');
+        shown++;
+      }
+    }
+    if (b.ongoing.length > shown) parts.push(L.more(b.ongoing.length - shown), '');
   }
 
   parts.push('🔗 https://rizabalci.github.io/vienna-events-hub/');
@@ -348,16 +400,27 @@ async function send(text) {
   const visibleLen = s => s.replace(/<[^>]+>/g, '').length;
   const RAW_LIMIT = 9000;      // hard ceiling on payload size
   const VIS_LIMIT = 3500;      // safety margin under Telegram's 4096
+  const isHeader = s => /^(🔴|📅|🗓|📆|♾)/.test(s);
+  const contWord = LANG === 'de' ? 'Fortsetzung' : 'continued';
 
   const chunks = [];
   let buf = '';
+  let header = '';          // most recent section header
+  let carried = false;      // has the current chunk already been labelled
+
   for (const line of text.split('\n')) {
+    if (isHeader(line)) { header = line; carried = true; }
     const next = buf ? buf + '\n' + line : line;
+
     if (buf && (visibleLen(next) > VIS_LIMIT || next.length > RAW_LIMIT)) {
       chunks.push(buf);
-      buf = line;
+      // If we're splitting mid-section, repeat the header so the next
+      // message isn't an orphaned list of names.
+      buf = (header && !carried) ? `${header} <i>(${contWord})</i>\n${line}` : line;
+      carried = isHeader(line);
     } else {
       buf = next;
+      if (!isHeader(line)) carried = false;
     }
   }
   if (buf) chunks.push(buf);
