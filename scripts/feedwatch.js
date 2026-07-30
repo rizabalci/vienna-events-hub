@@ -43,15 +43,41 @@ function monthSlug(offset) {
 // the notification. Edit freely (GitHub pencil icon) — plain names, any case,
 // Turkish characters fine.
 const WATCHLIST = [
-  'Tarkan', 'Sezen Aksu', 'Sertab Erener', 'Teoman', 'Duman', 'maNga',
-  'Mor ve Ötesi', 'Şebnem Ferah', 'Cem Adrian', 'Mabel Matiz', 'Zeynep Bastık',
-  'Edis', 'Simge', 'Melike Şahin', 'Gaye Su Akyol', 'Altın Gün',
-  'Derya Yıldırım', 'BaBa ZuLa', 'Mercan Dede', 'Emir Can İğrek', 'Haftbefehl'
+  // Pop
+  'Tarkan', 'Sezen Aksu', 'Sertab Erener', 'Mabel Matiz', 'Zeynep Bastık',
+  'Edis', 'Simge', 'Melike Şahin', 'Sıla', 'Kenan Doğulu', 'Hadise', 'Buray',
+  'Mustafa Sandal', 'Melek Mosso', 'Mert Demir', 'Semicenk', 'Aleyna Tilki',
+  // Rock & alternative
+  'Teoman', 'Duman', 'maNga', 'Mor ve Ötesi', 'Şebnem Ferah', 'Cem Adrian',
+  'Athena', 'Adamlar', 'Pinhani', 'Yüzyüzeyken Konuşuruz', 'Madrigal',
+  'Emir Can İğrek', 'Gaye Su Akyol', 'She Past Away', 'Jakuzi',
+  // Rap & hip-hop
+  'Ezhel', 'UZI', 'Motive', 'Ceza', 'Sagopa Kajmer', 'Şanışer', 'Norm Ender',
+  'Lvbel C5', 'Batuflex', 'BLOK3', 'Haftbefehl',
+  // Anatolian, folk, world, electronic
+  'Altın Gün', 'Derya Yıldırım', 'BaBa ZuLa', 'Mercan Dede', 'Islandman',
+  'Koray Avcı', 'Ahmet Aslan', 'Aynur Doğan',
+  // Vienna-based & comedy
+  'Özlem Bulut', 'Fatima Spar', 'Cem Yılmaz', 'Ata Demirer'
 ];
 const foldName = s => String(s).toLowerCase().replace(/ı/g, 'i')
-  .normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '');
-const WATCH_FOLDED = WATCHLIST.map(foldName);
-const isWatch = ev => { const n = foldName(ev.n); return WATCH_FOLDED.some(w => n.includes(w)); };
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+const toTokens = s => foldName(s).split(/[^a-z0-9]+/).filter(Boolean);
+const WATCH_TOKS = WATCHLIST.map(toTokens);
+const isWatch = ev => {
+  const t = toTokens(ev.n);
+  return WATCH_TOKS.some(w => {
+    for (let i = 0; i + w.length <= t.length; i++) {
+      let ok = true;
+      for (let j = 0; j < w.length; j++) if (t[i + j] !== w[j]) { ok = false; break; }
+      if (ok) return true;
+    }
+    return false;
+  });
+};
+// Auto-flag: these characters occur in Turkish names and virtually never in
+// German/English artist names — probable Turkish artist even if unlisted.
+const isTurkishGuess = ev => /[ışğİŞĞ]/.test(String(ev.n)) && !isWatch(ev);
 
 const SOURCES = [
   { type: 'songkick', name: 'Songkick Vienna (upcoming)',
@@ -312,10 +338,10 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
     const footer = '📥 Review: <a href="https://github.com/rizabalci/vienna-events-hub/edit/main/data/pending.json">pending.json</a> → copy keepers into community.json, delete the rest.';
     const line = x => {
       const range = x.de && x.de !== x.dt ? `${fmt(x.dt)}–${fmt(x.de)}` : fmt(x.dt);
-      const star = isWatch(x) ? '⭐ ' : '';
+      const star = isWatch(x) ? '⭐ ' : (isTurkishGuess(x) ? '🔸 ' : '');
       return `• ${star}${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}`;
     };
-    const watchHits = fresh.filter(isWatch);
+    const watchHits = fresh.filter(x => isWatch(x) || isTurkishGuess(x));
     if (watchHits.length) console.log(`Watchlist hits: ${watchHits.map(x => x.n).join(', ')}`);
     const plus = n => {
       const d = new Date(); d.setDate(d.getDate() + n);
