@@ -853,7 +853,7 @@ var CATS=[
 {id:'food',l:{en:'Food & Drink',de:'Essen & Trinken'},i:'🍽'},
 {id:'ongoing',l:{en:'Ongoing',de:'Laufend'},i:'◆'}
 ];
-var DFS=[{id:'all',l:{en:'All',de:'Alle'}},{id:'today',l:{en:'Today',de:'Heute'}},{id:'week',l:{en:'This Week',de:'Diese Woche'}},{id:'weekend',l:{en:'Weekend',de:'Wochenende'}},{id:'month',l:{en:'This Month',de:'Diesen Monat'}},{id:'next',l:{en:'Next Month',de:'Nächsten Monat'}},{id:'new',l:{en:'Opening Soon',de:'Bald Eröffnung'}},{id:'ending',l:{en:'Ending Soon',de:'Endet bald'}}];
+var DFS=[{id:'all',l:{en:'All',de:'Alle'}},{id:'today',l:{en:'Today',de:'Heute'}},{id:'week',l:{en:'This Week',de:'Diese Woche'}},{id:'weekend',l:{en:'Weekend',de:'Wochenende'}},{id:'month',l:{en:'Next 30 Days',de:'Nächste 30 Tage'}},{id:'next',l:{en:'Next 3 Months',de:'Nächste 3 Monate'}},{id:'new',l:{en:'Opening Soon',de:'Bald Eröffnung'}},{id:'ending',l:{en:'Ending Soon',de:'Endet bald'}}];
 
 function tx(k){var m={ph:{en:'Search concerts, balls, kabarett, theater, opera, dance, film, jazz...',de:'Suche Konzerte, Bälle, Kabarett, Theater, Oper, Tanz, Film, Jazz...'},res:{en:'events found',de:'Events gefunden'},no:{en:'No matching events',de:'Keine passenden Events'},upd:{en:'Real events · Updated Jul 30, 2026 · 588 events · 15 categories',de:'Echte Events · Aktualisiert 30. Juli 2026 · 588 Events · 15 Kategorien'},more:{en:'More live results on Google:',de:'Mehr aktuelle Ergebnisse bei Google:'},info:{en:'Info',de:'Info'},save:{en:'Save',de:'Merken'}};return(m[k]||{})[S.lang]||k}
 function catL(c){var m={concert:{en:'Concert',de:'Konzert'},classical:{en:'Classical',de:'Klassik'},opera:{en:'Opera/Ballet',de:'Oper/Ballett'},dance:{en:'Dance',de:'Tanz'},musical:{en:'Musical',de:'Musical'},theater:{en:'Theater',de:'Theater'},kabarett:{en:'Kabarett',de:'Kabarett'},ball:{en:'Ball',de:'Ball'},exhibition:{en:'Exhibition',de:'Ausstellung'},film:{en:'Film',de:'Film'},jazz:{en:'Jazz',de:'Jazz'},sports:{en:'Sports',de:'Sport'},special:{en:'Event',de:'Event'},ongoing:{en:'Ongoing',de:'Laufend'}};return(m[c]||{})[S.lang]||c}
@@ -875,8 +875,8 @@ function filter(){
   if(S.df==='today')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s;return s<=NOW&&en>=NOW});
   if(S.df==='week')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s,w=addD(NOW,7);return s<=w&&en>=NOW});
   if(S.df==='weekend')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s,fs=nextWknd();return s<=fs[1]&&en>=fs[0]});
-  if(S.df==='month')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s,a=NOW,b=mEnd(0);return s<=b&&en>=a});
-  if(S.df==='next')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s,a=mStart(1),b=mEnd(1);return s<=b&&en>=a});
+  if(S.df==='month')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s;return s<=addD(NOW,30)&&en>=NOW});
+  if(S.df==='next')r=r.filter(function(e){var s=pd(e.dt),en=e.de?pd(e.de):s;return s<=addD(NOW,92)&&en>=NOW});
   if(S.df==='new')r=r.filter(function(e){var s=pd(e.dt);return s>=NOW&&s<=addD(NOW,14)});
   if(S.df==='ending')r=r.filter(function(e){if(!e.de)return false;var en=pd(e.de);return en>=NOW&&en<=addD(NOW,30)});
   if(S.q){var w=S.q.toLowerCase().split(/\s+/);r=r.map(function(e){var h=(e.n+' '+e.v+' '+(e.desc[S.lang]||e.desc.en)+' '+e.t.join(' ')+' '+e.c+' '+catL(e.c)).toLowerCase();var sc=0;w.forEach(function(x){if(x.length<2)return;if(h.indexOf(x)!==-1)sc+=10;if(e.n.toLowerCase().indexOf(x)!==-1)sc+=25;if(e.t.indexOf(x)!==-1)sc+=15});return{e:e,s:sc}}).filter(function(x){return x.s>0}).sort(function(a,b){return b.s-a.s}).map(function(x){return x.e})}

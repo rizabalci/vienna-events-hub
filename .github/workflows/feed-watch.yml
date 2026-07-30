@@ -1,0 +1,45 @@
+name: Feed Watch
+
+on:
+  schedule:
+    # Sundays 17:00 UTC — findings land before the Monday morning bulletin
+    - cron: '0 17 * * 0'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (log only, write nothing, send nothing)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Discover new events
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DRY_RUN: ${{ inputs.dry_run && 'true' || 'false' }}
+        run: node scripts/feedwatch.js
+
+      - name: Commit findings
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "feed-watch"
+          git config user.email "actions@github.com"
+          if ! git diff --quiet data/; then
+            git add data/pending.json data/feed-seen.json
+            git commit -m "Feed watch: new pending events ($(date -u +%F))"
+            git push
+          else
+            echo "No changes to commit."
+          fi
