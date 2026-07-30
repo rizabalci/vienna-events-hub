@@ -1,0 +1,42 @@
+name: Telegram Check Command
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: telegram-check
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Poll for commands
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node scripts/telegram-poll.js
+
+      - name: Commit state
+        run: |
+          git config user.name "telegram-check"
+          git config user.email "actions@github.com"
+          git pull --rebase
+          if ! git diff --quiet data/; then
+            git add data/tg-offset.json data/pending.json data/feed-seen.json
+            git commit -m "Telegram check: state update"
+            git push
+          else
+            echo "No changes."
+          fi

@@ -35,6 +35,7 @@ const CATS = {
   theater:    { icon: '🎬', en: 'Theater',      de: 'Theater' },
   kabarett:   { icon: '😂', en: 'Kabarett',     de: 'Kabarett' },
   exhibition: { icon: '🖼', en: 'Exhibitions',  de: 'Ausstellungen' },
+  activity:   { icon: '🎳', en: 'Activities',   de: 'Aktivitäten' },
   ball:       { icon: '💃', en: 'Balls',        de: 'Bälle' },
   special:    { icon: '✨', en: 'Special',      de: 'Specials' },
   sport:      { icon: '⚽️', en: 'Sport',        de: 'Sport' },
@@ -303,6 +304,18 @@ function venueUrl(ev) {
   return /^https?:\/\//i.test(raw) ? raw : 'https://' + raw.replace(/^\/+/, '');
 }
 
+// Google Maps route to the venue. Origin comes from the HOME_ADDRESS secret
+// (private repo config, never in code); without it Google asks for/uses your
+// own location, so the link still works.
+function mapsUrl(ev) {
+  let v = String(ev.v || '').replace(/^\d{1,2}:\d{2}\s*·\s*/, '');
+  if (!v || /various|across vienna|wandering|parks and|tba|check your|and squares/i.test(v)) return null;
+  if (!/wien|vienna/i.test(v)) v += ', Wien';
+  const home = (process.env.HOME_ADDRESS || '').trim();
+  const origin = home ? `origin=${encodeURIComponent(home)}&` : '';
+  return `https://www.google.com/maps/dir/?api=1&${origin}destination=${encodeURIComponent(v)}&travelmode=transit`;
+}
+
 // Targeted search — reliably lands on the event's own page in one click
 function searchUrl(ev) {
   const name = String(ev.n || '');
@@ -356,6 +369,8 @@ function evLine(ev, lang, showDate) {
   sub.push(`<a href="${esc(infoUrl(ev))}">${hasDirect(ev) ? '🎟' : '🔍'}</a>`);
   const vu = venueUrl(ev);
   if (vu && vu !== infoUrl(ev)) sub.push(`<a href="${esc(vu)}">🏛</a>`);
+  const mu = mapsUrl(ev);
+  if (mu) sub.push(`<a href="${esc(mu)}">🗺</a>`);
 
   return `${head}\n     <i>${sub.join(' · ')}</i>`;
 }
@@ -399,6 +414,8 @@ function ongoingLine(ev, lang) {
   if (ev.v) bits.push(esc(ev.v));
   const vu = venueUrl(ev);
   if (vu && vu !== infoUrl(ev)) bits.push(`<a href="${esc(vu)}">🏛</a>`);
+  const mu = mapsUrl(ev);
+  if (mu) bits.push(`<a href="${esc(mu)}">🗺</a>`);
   const tail = bits.length ? ` <i>· ${bits.join(' · ')}</i>` : '';
   return `  • ${name}${until}${tail}`;
 }
@@ -407,15 +424,15 @@ function buildMessage(b, today, lang) {
   const L = lang === 'de' ? {
     head: '🎪 <b>Wien Events</b>', today: '🔴 <b>HEUTE</b>', week: '📅 <b>DIESE WOCHE</b>',
     month: '🗓 <b>DIESEN MONAT</b>', later: '📆 <b>NÄCHSTE 3 MONATE</b>',
-    ongoing: '♾ <b>LÄUFT DURCHGEHEND</b>', none: 'Keine Events gefunden.',
-    tip: '🎟 Direkte Event-Seite · 🔍 Suche · 🏛 Venue',
+    ongoing: '♾ <b>GANZJÄHRIG</b>', none: 'Keine Events gefunden.',
+    tip: '🎟 Direkte Event-Seite · 🔍 Suche · 🏛 Venue · 🗺 Route',
     site: '🌐 <b><a href="https://rizabalci.github.io/vienna-events-hub/">Alle Events ansehen — Vienna Events Hub</a></b>\n<i>Suche, Filter nach Kategorie und Datum, Merkliste</i>',
     more: n => `  <i>… und ${n} weitere</i>`
   } : {
     head: '🎪 <b>Vienna Events</b>', today: '🔴 <b>TODAY</b>', week: '📅 <b>THIS WEEK</b>',
     month: '🗓 <b>THIS MONTH</b>', later: '📆 <b>NEXT 3 MONTHS</b>',
-    ongoing: '♾ <b>RUNNING CONTINUOUSLY</b>', none: 'No events found.',
-    tip: '🎟 direct event page · 🔍 search · 🏛 venue',
+    ongoing: '♾ <b>ALL YEAR LONG</b>', none: 'No events found.',
+    tip: '🎟 direct event page · 🔍 search · 🏛 venue · 🗺 route',
     site: '🌐 <b><a href="https://rizabalci.github.io/vienna-events-hub/">See all events — Vienna Events Hub</a></b>\n<i>Search, filter by category and date, save favourites</i>',
     more: n => `  <i>… and ${n} more</i>`
   };

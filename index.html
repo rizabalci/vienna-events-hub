@@ -59,6 +59,8 @@ main{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;p
 .gb{margin:4px 0;padding:10px;border:1px solid var(--bd);border-radius:12px;background:var(--sf);text-align:center}
 .gb p{font-size:11px;color:var(--tm);margin-bottom:6px}
 .gbl{display:inline-flex;align-items:center;gap:5px;padding:9px 18px;border-radius:10px;background:linear-gradient(135deg,#4285F4,#356AC3);color:#fff;text-decoration:none;font-size:12px;font-weight:600}
+.secdiv{margin:26px 0 12px;padding-top:14px;border-top:1px solid rgba(128,128,128,.25);font-weight:700;font-size:.95em;opacity:.85}
+.secnote{margin:4px 0 14px;opacity:.7;font-style:italic}
 .empty{text-align:center;padding:40px 20px;color:var(--tm);font-size:13px}
 .empty .ic{font-size:36px;margin-bottom:10px}
 .ia{position:fixed;bottom:0;left:0;right:0;z-index:30;padding:8px 16px 6px;padding-bottom:calc(6px + var(--sb));border-top:1px solid var(--bd);background:rgba(13,13,26,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
@@ -108,8 +110,19 @@ try{var p=JSON.parse(localStorage.getItem('weh4'));if(p){S.dark=!!p.d;S.lang=p.l
 try{var b=JSON.parse(localStorage.getItem('wehbk4'));if(Array.isArray(b))S.bk=b}catch(e){}
 
 var EV=[
-{id:906,eu:"https://www.wiener-staatsoper.at/en/calendar/2026/september/",n:"Don Carlo — Staatsoper Season Opening",dt:"2026-09-04",de:"2026-09-16",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"The 2026/27 season opens with Verdi's Don Carlo: Grigolo, Stikhina, Dupuis, Groissböck, conducted by Morandi. Five performances through 16 Sep.",de:"Saisoneröffnung 2026/27 mit Verdis Don Carlo: Grigolo, Stikhina, Dupuis, Groissböck unter Morandi. Fünf Vorstellungen bis 16.9."},u:"wiener-staatsoper.at",t:["verdi","season-opening"]},
-{id:907,eu:"https://www.wiener-staatsoper.at/en/calendar/2026/september/",n:"Adriana Lecouvreur — Garanča & Jaho",dt:"2026-09-05",de:"2026-09-14",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"Cilea revival with Ermonela Jaho in the title role and Elīna Garanča as the Princess. Armiliato conducts. 5, 8, 11, 14 Sep.",de:"Cilea-Wiederaufnahme mit Ermonela Jaho in der Titelrolle und Elīna Garanča als Fürstin. Armiliato dirigiert. 5., 8., 11., 14.9."},u:"wiener-staatsoper.at",t:["cilea","garanca"]},
+{id:930,eu:"https://www.kugeltanz.at/",n:"Kugeltanz — Bowling im Prater",dt:"2026-01-01",de:"2026-12-31",c:"activity",v:"Prater Hauptallee 124",p:"€15–35/lane/hr",desc:{en:"32 bowling lanes, 4 billiard tables, darts and table football in the Prater, with the Gault&Millau-listed Die Allee restaurant attached. Disco bowling with DJs Fri/Sat evenings.",de:"32 Bowlingbahnen, 4 Billardtische, Darts und Wuzzler im Prater, mit dem Gault&Millau-gelisteten Lokal Die Allee. Disco-Bowling mit DJs Fr/Sa abends."},u:"kugeltanz.at",t:["bowling","billiards","group"]},
+{id:931,n:"Plus Bowling",dt:"2026-01-01",de:"2026-12-31",c:"activity",v:"Hernals",p:"~€3–4.50/game",desc:{en:"The institution of Vienna's bowling scene, with a big billiards hall, darts, air hockey and a bowling shop on site.",de:"Die Institution der Wiener Bowling-Szene, mit großer Billardhalle, Darts, Airhockey und Bowling-Shop vor Ort."},u:"plusbowling.at",t:["bowling","billiards"]},
+{id:932,n:"Alterlaa Bowling",dt:"2026-01-01",de:"2026-12-31",c:"activity",v:"Anton-Baumgartner-Straße 44, Liesing",p:"€16–29/lane/hr",desc:{en:"Fifteen Brunswick lanes and eleven billiard tables next to the Alterlaa center — comfortable, modern, good for groups.",de:"Fünfzehn Brunswick-Bahnen und elf Billardtische beim Alterlaa-Zentrum — komfortabel, modern, gut für Gruppen."},u:"",t:["bowling","billiards","group"]},
+{id:933,n:"Bowling im Millennium City",dt:"2026-01-01",de:"2026-12-31",c:"activity",v:"Millennium City, Handelskai",p:"",desc:{en:"Bowling and billiards inside the Millennium City mall — combine with cinema and food court under one roof.",de:"Bowling und Billard in der Millennium City — mit Kino und Food Court unter einem Dach kombinierbar."},u:"",t:["bowling","billiards","mall"]},
+{id:934,n:"Cumberland Sportcenter — Bowling",dt:"2026-01-01",de:"2026-12-31",c:"activity",v:"Penzing (U4 Unter St. Veit)",p:"",desc:{en:"Twelve well-kept lanes in a sport center that also does tennis — small, friendly, easy to book.",de:"Zwölf gepflegte Bahnen in einem Sportcenter mit Tennis — klein, freundlich, leicht zu buchen."},u:"",t:["bowling"]},
+
+{id:919,eu:"https://www.wiener-staatsoper.at/en/calendar/detail/le-nozze-di-figaro/2026-09-09/",n:"Le nozze di Figaro",dt:"2026-09-09",de:"2026-09-17",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"Mozart's Figaro back in repertoire, two performances: 9 and 17 Sep.",de:"Mozarts Figaro zurück im Repertoire, zwei Vorstellungen: 9. und 17.9."},u:"wiener-staatsoper.at",t:["mozart","repertoire"]},
+{id:920,eu:"https://www.wiener-staatsoper.at/en/calendar/detail/living-legacies/2026-09-18/",n:"Living Legacies — Wiener Staatsballett",dt:"2026-09-18",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"The Staatsballett opens its season with the Living Legacies programme.",de:"Das Staatsballett eröffnet die Saison mit dem Programm Living Legacies."},u:"wiener-staatsoper.at",t:["ballet","season-opening"]},
+{id:921,eu:"https://www.wiener-staatsoper.at/en/calendar/detail/la-clemenza-di-tito/2026-09-20/",n:"La clemenza di Tito",dt:"2026-09-20",de:"2026-09-29",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"Mozart's late opera seria, three performances: 20, 25 and 29 Sep.",de:"Mozarts späte Opera seria, drei Vorstellungen: 20., 25. und 29.9."},u:"wiener-staatsoper.at",t:["mozart","repertoire"]},
+{id:922,eu:"https://www.wiener-staatsoper.at/en/calendar/detail/macbeth/2026-09-24/",n:"Macbeth — Verdi at the Staatsoper",dt:"2026-09-24",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"Verdi's Macbeth returns to the repertoire from 24 Sep. Not to be confused with the Volkstheater's spoken-theater Macbeth two weeks earlier.",de:"Verdis Macbeth kehrt ab 24.9. ins Repertoire zurück. Nicht zu verwechseln mit dem Schauspiel-Macbeth am Volkstheater zwei Wochen davor."},u:"wiener-staatsoper.at",t:["verdi","repertoire"]},
+
+{id:906,eu:"https://www.wiener-staatsoper.at/en/calendar/detail/don-carlo/2026-09-04/",n:"Don Carlo — Staatsoper Season Opening",dt:"2026-09-04",de:"2026-09-16",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"The 2026/27 season opens with Verdi's Don Carlo: Grigolo, Stikhina, Dupuis, Groissböck, conducted by Morandi. Five performances through 16 Sep.",de:"Saisoneröffnung 2026/27 mit Verdis Don Carlo: Grigolo, Stikhina, Dupuis, Groissböck unter Morandi. Fünf Vorstellungen bis 16.9."},u:"wiener-staatsoper.at",t:["verdi","season-opening"]},
+{id:907,eu:"https://www.wiener-staatsoper.at/en/calendar/detail/adriana-lecouvreur/2026-09-08/",n:"Adriana Lecouvreur — Garanča & Jaho",dt:"2026-09-08",de:"2026-09-14",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"Cilea revival with Ermonela Jaho in the title role and Elīna Garanča as the Princess. Armiliato conducts. 5, 8, 11, 14 Sep.",de:"Cilea-Wiederaufnahme mit Ermonela Jaho in der Titelrolle und Elīna Garanča als Fürstin. Armiliato dirigiert. 5., 8., 11., 14.9."},u:"wiener-staatsoper.at",t:["cilea","garanca"]},
 {id:908,eu:"https://www.wiener-staatsoper.at/en/calendar/2026/september/",n:"Karussell — Family Opera Premiere (after Offenbach)",dt:"2026-09-04",de:"2026-09-20",c:"opera",v:"Wiener Staatsoper",p:"",desc:{en:"New family production after Jacques Offenbach, an opera dream built to ride along with. Runs throughout September.",de:"Neue Familienproduktion nach Jacques Offenbach, ein Operntraum zum Mitfahren. Läuft den ganzen September."},u:"wiener-staatsoper.at",t:["family","offenbach","premiere"]},
 {id:909,eu:"https://www.wiener-staatsoper.at/en/calendar/2026/september/",n:"Staatsoper Open Air — Burggarten",dt:"2026-09-06",c:"opera",v:"Burggarten",p:"Free",desc:{en:"Free open-air season opening gala: Grigorian, Beczała, Flórez and Tézier under Axel Kober, in the park behind the opera.",de:"Kostenlose Open-Air-Saisoneröffnungsgala: Grigorian, Beczała, Flórez und Tézier unter Axel Kober, im Park hinter der Oper."},u:"wiener-staatsoper.at",t:["free","openair","gala"]},
 {id:910,eu:"https://www.volkstheater.at/premieren/",n:"Macbeth — Volkstheater Season Opening Premiere",dt:"2026-09-10",c:"theater",v:"Volkstheater",p:"",desc:{en:"The new Volkstheater season opens with Shakespeare's Macbeth directed by Rieke Süßkow.",de:"Die neue Volkstheater-Saison eröffnet mit Shakespeares Macbeth in der Regie von Rieke Süßkow."},u:"volkstheater.at",t:["shakespeare","premiere","season-opening"]},
@@ -851,12 +864,13 @@ var CATS=[
 {id:'special',l:{en:'Events',de:'Events'},i:'✧'},
 {id:'community',l:{en:'Community',de:'Community'},i:'🌍'},
 {id:'food',l:{en:'Food & Drink',de:'Essen & Trinken'},i:'🍽'},
+{id:'activity',l:{en:'Activities',de:'Aktivitäten'},i:'🎳'},
 {id:'ongoing',l:{en:'Ongoing',de:'Laufend'},i:'◆'}
 ];
 var DFS=[{id:'all',l:{en:'All',de:'Alle'}},{id:'today',l:{en:'Today',de:'Heute'}},{id:'week',l:{en:'This Week',de:'Diese Woche'}},{id:'weekend',l:{en:'Weekend',de:'Wochenende'}},{id:'month',l:{en:'Next 30 Days',de:'Nächste 30 Tage'}},{id:'next',l:{en:'Next 3 Months',de:'Nächste 3 Monate'}},{id:'new',l:{en:'Opening Soon',de:'Bald Eröffnung'}},{id:'ending',l:{en:'Ending Soon',de:'Endet bald'}}];
 
-function tx(k){var m={ph:{en:'Search concerts, balls, kabarett, theater, opera, dance, film, jazz...',de:'Suche Konzerte, Bälle, Kabarett, Theater, Oper, Tanz, Film, Jazz...'},res:{en:'events found',de:'Events gefunden'},no:{en:'No matching events',de:'Keine passenden Events'},upd:{en:'Real events · Updated Jul 30, 2026 · 588 events · 15 categories',de:'Echte Events · Aktualisiert 30. Juli 2026 · 588 Events · 15 Kategorien'},more:{en:'More live results on Google:',de:'Mehr aktuelle Ergebnisse bei Google:'},info:{en:'Info',de:'Info'},save:{en:'Save',de:'Merken'}};return(m[k]||{})[S.lang]||k}
-function catL(c){var m={concert:{en:'Concert',de:'Konzert'},classical:{en:'Classical',de:'Klassik'},opera:{en:'Opera/Ballet',de:'Oper/Ballett'},dance:{en:'Dance',de:'Tanz'},musical:{en:'Musical',de:'Musical'},theater:{en:'Theater',de:'Theater'},kabarett:{en:'Kabarett',de:'Kabarett'},ball:{en:'Ball',de:'Ball'},exhibition:{en:'Exhibition',de:'Ausstellung'},film:{en:'Film',de:'Film'},jazz:{en:'Jazz',de:'Jazz'},sports:{en:'Sports',de:'Sport'},special:{en:'Event',de:'Event'},ongoing:{en:'Ongoing',de:'Laufend'}};return(m[c]||{})[S.lang]||c}
+function tx(k){var m={ph:{en:'Search concerts, balls, kabarett, theater, opera, dance, film, jazz...',de:'Suche Konzerte, Bälle, Kabarett, Theater, Oper, Tanz, Film, Jazz...'},res:{en:'events found',de:'Events gefunden'},no:{en:'No matching events',de:'Keine passenden Events'},upd:{en:'Real events · Updated Jul 30, 2026 · 597 events · 16 categories',de:'Echte Events · Aktualisiert 30. Juli 2026 · 597 Events · 16 Kategorien'},more:{en:'More live results on Google:',de:'Mehr aktuelle Ergebnisse bei Google:'},info:{en:'Info',de:'Info'},save:{en:'Save',de:'Merken'}};return(m[k]||{})[S.lang]||k}
+function catL(c){var m={concert:{en:'Concert',de:'Konzert'},classical:{en:'Classical',de:'Klassik'},opera:{en:'Opera/Ballet',de:'Oper/Ballett'},dance:{en:'Dance',de:'Tanz'},musical:{en:'Musical',de:'Musical'},theater:{en:'Theater',de:'Theater'},kabarett:{en:'Kabarett',de:'Kabarett'},ball:{en:'Ball',de:'Ball'},exhibition:{en:'Exhibition',de:'Ausstellung'},film:{en:'Film',de:'Film'},jazz:{en:'Jazz',de:'Jazz'},sports:{en:'Sports',de:'Sport'},special:{en:'Event',de:'Event'},activity:{en:'Activity',de:'Aktivität'},ongoing:{en:'Ongoing',de:'Laufend'}};return(m[c]||{})[S.lang]||c}
 function pd(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
 function fd(s){var d=pd(s),wd=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];if(S.lang==='de'){wd=['So','Mo','Di','Mi','Do','Fr','Sa'];mn=['Jän','Feb','Mär','Apr','Mai','Jun','Jul','Aug','Sep','Okt','Nov','Dez']}return wd[d.getDay()]+' '+d.getDate()+' '+mn[d.getMonth()]}
 function addD(d,n){return new Date(d.getFullYear(),d.getMonth(),d.getDate()+n)}
@@ -867,6 +881,7 @@ function isActive(e){var s=pd(e.dt),en=e.de?pd(e.de):s;return en>=NOW}
 function dtag(e){var s=pd(e.dt),en=e.de?pd(e.de):s;if(e.dt==='2026-02-04')return'<span class="live">'+(S.lang==='de'?'HEUTE':'TODAY')+'</span>';if(s<=NOW&&en>=NOW&&e.de)return'<span class="live">'+(S.lang==='de'?'JETZT':'NOW')+'</span>';if(en>=NOW&&en<=new Date(2026,1,11)&&e.de)return'<span class="ending">'+(S.lang==='de'?'Endet bald':'Ending soon')+'</span>';if(s>NOW&&s<=new Date(2026,1,10))return'<span class="soon">'+(S.lang==='de'?'Diese Woche':'This week')+'</span>';if(s>=new Date(2026,2,1))return'<span class="soon">'+(S.lang==='de'?'März':'March')+'</span>';return''}
 function ddsp(e){return e.de?fd(e.dt)+' → '+fd(e.de):fd(e.dt)}
 function ec(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function mapsUrl(e){if(!e.v)return null;if(/various|across vienna|wandering|parks and|tba|check your|and squares/i.test(e.v))return null;return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(e.v+', Wien')+'&travelmode=transit'}
 function gu(q){return'https://www.google.com/search?q='+encodeURIComponent(q+' Wien 2026')}
 
 function filter(){
@@ -890,12 +905,23 @@ function render(){
   document.getElementById('upd').textContent=tx('upd');
   var h='';
   if(!r.length)h='<div class="empty"><div class="ic">🔍</div>'+tx('no')+'</div>';
-  r.forEach(function(e){
+  var splitAt=-1,splitLabel='';
+  if(S.df==='today'){
+    var tISO=NOW.getFullYear()+'-'+String(NOW.getMonth()+1).padStart(2,'0')+'-'+String(NOW.getDate()).padStart(2,'0');
+    var td=[],og=[];
+    r.forEach(function(e){if(e.dt===tISO)td.push(e);else og.push(e)});
+    og.sort(function(a,b){return (a.de||a.dt)<(b.de||b.dt)?-1:1});
+    r=td.concat(og);
+    if(og.length){splitAt=td.length;splitLabel=(S.lang==='de'?'♾ Ganzjährig — heute geöffnet ('+og.length+')':'♾ All year long — open today ('+og.length+')')}
+    if(!td.length&&og.length){h+='<div class="secnote">'+(S.lang==='de'?'Keine Einzeltermine heute — aber diese Programme laufen:':'No one-off events today — but these programs are on:')+'</div>'}
+  }
+  r.forEach(function(e,evIdx){
+    if(evIdx===splitAt&&splitAt>0)h+='<div class="secdiv">'+splitLabel+'</div>';
     var ib=S.bk.indexOf(e.id)!==-1;
     h+='<div class="ec"><div class="ec-top">'+
       '<div class="ec-date">'+ddsp(e)+' '+dtag(e)+'</div>'+
       '<div class="ec-name">'+ec(e.n)+'</div>'+
-      '<div class="ec-venue">📍 '+ec(e.v)+'</div>'+
+      '<div class="ec-venue">'+(mapsUrl(e)?'<a href="'+mapsUrl(e)+'" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline dotted">📍 '+ec(e.v)+'</a>':'📍 '+ec(e.v))+'</div>'+
       '<div class="ec-desc">'+ec(e.desc[S.lang]||e.desc.en)+'</div>'+
       '<div class="ec-meta"><span class="ec-tag ec-cat">'+catL(e.c)+'</span><span class="ec-tag ec-price">'+ec(e.p)+'</span></div>'+
       '</div><div class="ec-actions">'+

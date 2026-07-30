@@ -45,6 +45,10 @@ const SOURCES = [
     url: `https://www.songkick.com/metro-areas/26771-austria-vienna/${monthSlug(1)}` },
   { type: 'songkick', name: 'Songkick Vienna (+2 months)',
     url: `https://www.songkick.com/metro-areas/26771-austria-vienna/${monthSlug(2)}` },
+  { type: 'songkick', name: `Songkick Vienna (${new Date().getFullYear()})`,
+    url: `https://www.songkick.com/metro-areas/26771-austria-vienna/${new Date().getFullYear()}` },
+  { type: 'songkick', name: `Songkick Vienna (${new Date().getFullYear() + 1})`,
+    url: `https://www.songkick.com/metro-areas/26771-austria-vienna/${new Date().getFullYear() + 1}` },
 
   // ── Meetup groups ────────────────────────────────────────────
   // Every Meetup group has an iCal feed: meetup.com/GROUP-SLUG/events/ical/
@@ -161,20 +165,22 @@ const skId = ev => {
 };
 
 // ── Telegram ──────────────────────────────────────────────────
-async function notify(lines) {
+async function notify(messages) {
   const token = (process.env.TELEGRAM_BOT_TOKEN || '').trim();
   const chat = (process.env.TELEGRAM_CHAT_ID || '').trim();
   if (!token || !chat) { console.log('(no Telegram secrets — skipping notification)'); return; }
-  const text = lines.join('\n');
-  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: chat, text, parse_mode: 'HTML', disable_web_page_preview: true }),
-    signal: AbortSignal.timeout(20000)
-  });
-  const data = await res.json().catch(() => ({}));
-  if (!data.ok) console.error('Telegram send failed:', JSON.stringify(data).slice(0, 200));
-  else console.log('Telegram notification sent.');
+  for (const text of messages) {
+    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: chat, text, parse_mode: 'HTML', disable_web_page_preview: true }),
+      signal: AbortSignal.timeout(20000)
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!data.ok) console.error('Telegram send failed:', JSON.stringify(data).slice(0, 200));
+    await new Promise(r => setTimeout(r, 500));
+  }
+  console.log(`Telegram notification sent (${messages.length} message${messages.length > 1 ? 's' : ''}).`);
 }
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -253,6 +259,7 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
     return true;
   });
   console.log(`New events found: ${fresh.length}`);
+  fresh.sort((a, b) => a.dt.localeCompare(b.dt) || a.n.localeCompare(b.n));
   fresh.forEach(x => console.log(`  · ${x.dt}  ${x.n}  (${x.v || '?'})`));
 
   if (DRY) { console.log('\nDRY RUN — nothing written, nothing sent.'); return; }
@@ -277,13 +284,50 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(
   // 5. Notify
   const fmt = d => { const [y, m, dd] = d.split('-'); return `${dd}.${m}.`; };
   if (fresh.length) {
-    const lines = [`🔎 <b>Feed Watch</b> — ${fresh.length} new event${fresh.length > 1 ? 's' : ''} found`, ''];
-    for (const x of fresh.slice(0, 25)) {
-      lines.push(`• ${fmt(x.dt)} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}`);
+    const header = `🔎 <b>Feed Watch</b> — ${fresh.length} new event${fresh.length > 1 ? 's' : ''} found`;
+    const footer = '📥 Review: <a href="https://github.com/rizabalci/vienna-events-hub/edit/main/data/pending.json">pending.json</a> → copy keepers into community.json, delete the rest.';
+    const line = x => {
+      const range = x.de && x.de !== x.dt ? `${fmt(x.dt)}–${fmt(x.de)}` : fmt(x.dt);
+      return `• ${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}`;
+    };
+    const plus = n => {
+      const d = new Date(); d.setDate(d.getDate() + n);
+      return d.toISOString().slice(0, 10);
+    };
+    const W = plus(7), M = plus(30);
+    const buckets = [
+      ['🔴 <b>TODAY</b>', fresh.filter(x => x.dt === TODAY)],
+      ['📅 <b>THIS WEEK</b>', fresh.filter(x => x.dt > TODAY && x.dt <= W)],
+      ['🗓 <b>THIS MONTH</b>', fresh.filter(x => x.dt > W && x.dt <= M)],
+      ['📆 <b>FUTURE</b>', fresh.filter(x => x.dt > M)]
+    ];
+    const eventLines = [];
+    for (const [title, items] of buckets) {
+      if (!items.length) continue;
+      if (eventLines.length) eventLines.push('');
+      eventLines.push(`${title} (${items.length})`);
+      for (const x of items) eventLines.push(line(x));
     }
-    if (fresh.length > 25) lines.push(`… and ${fresh.length - 25} more in pending.json`);
-    lines.push('', '📥 Review: <a href="https://github.com/rizabalci/vienna-events-hub/edit/main/data/pending.json">pending.json</a> → copy keepers into community.json, delete the rest.');
-    await notify(lines);
+    // Split into as many messages as needed — every find gets shown
+    const LIMIT = 3600;
+    const chunks = [];
+    let cur = [header, ''];
+    let curLen = header.length;
+    for (const line of eventLines) {
+      if (curLen + line.length > LIMIT) {
+        chunks.push(cur.join('\n'));
+        cur = ['🔎 <b>Feed Watch</b> <i>(continued)</i>', ''];
+        curLen = cur[0].length;
+      }
+      cur.push(line);
+      curLen += line.length + 1;
+    }
+    cur.push('', footer);
+    chunks.push(cur.join('\n'));
+    console.log(`Notification: ${chunks.length} message(s), all ${fresh.length} events listed.`);
+    await notify(chunks);
+  } else if (process.env.FEEDWATCH_NOTIFY_EMPTY === 'true') {
+    await notify([`✅ <b>Feed Watch</b> — nothing new since the last scan.\n📥 Pending inbox: ${pending.length} entr${pending.length === 1 ? 'y' : 'ies'} — <a href="https://github.com/rizabalci/vienna-events-hub/blob/main/data/pending.json">review</a>`]);
   } else {
     console.log('Nothing new — no notification sent.');
   }

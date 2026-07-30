@@ -2,8 +2,8 @@ name: Feed Watch
 
 on:
   schedule:
-    # Sundays 17:00 UTC — findings land before the Monday morning bulletin
-    - cron: '0 17 * * 0'
+    # Daily 05:30 UTC (07:30 Vienna in summer) — silent unless something new
+    - cron: '30 5 * * *'
   workflow_dispatch:
     inputs:
       dry_run:
