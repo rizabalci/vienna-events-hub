@@ -1,0 +1,51 @@
+name: Weekly Vienna Events Bulletin
+
+on:
+  schedule:
+    # 07:00 UTC every Monday.
+    # Vienna is UTC+1 in winter (08:00 local) and UTC+2 in summer (09:00 local).
+    - cron: '0 7 * * 1'
+  workflow_dispatch:
+    inputs:
+      lang:
+        description: 'Language for the bulletin'
+        required: false
+        default: 'en'
+        type: choice
+        options: [en, de]
+      days_ahead:
+        description: 'How many days to look ahead'
+        required: false
+        default: '7'
+      start_date:
+        description: 'Override start date (YYYY-MM-DD), for testing'
+        required: false
+        default: ''
+      dry_run:
+        description: 'Print the message instead of sending it'
+        required: false
+        default: 'false'
+        type: choice
+        options: ['false', 'true']
+
+jobs:
+  bulletin:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Send bulletin
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          LANG_MODE: ${{ github.event.inputs.lang || 'en' }}
+          DAYS_AHEAD: ${{ github.event.inputs.days_ahead || '7' }}
+          START_DATE: ${{ github.event.inputs.start_date || '' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: node scripts/bulletin.js
