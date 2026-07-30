@@ -40,6 +40,7 @@ const CATS = {
   market:     { icon: '🛍', en: 'Markets',      de: 'Märkte' },
   film:       { icon: '🎞', en: 'Film',         de: 'Film' },
   food:       { icon: '🍽', en: 'Food & Drink', de: 'Essen & Trinken' },
+  community:  { icon: '🌍', en: 'Community',    de: 'Community' },
   other:      { icon: '📌', en: 'Other',        de: 'Sonstiges' }
 };
 
@@ -74,6 +75,22 @@ function loadEvents() {
   const events = new Function('return ' + literal + ';')();
   if (!Array.isArray(events)) throw new Error('EV did not evaluate to an array');
   return events;
+}
+
+// ── Community events (data/community.json) ────────────────────
+function loadCommunity() {
+  const file = path.join(ROOT, 'data', 'community.json');
+  if (!fs.existsSync(file)) return [];
+  try {
+    const raw = JSON.parse(fs.readFileSync(file, 'utf8'));
+    const list = Array.isArray(raw) ? raw : (raw.events || []);
+    return list
+      .filter(e => e && e.n && e.dt)
+      .map((e, i) => Object.assign({ id: 90000 + i, c: 'community' }, e));
+  } catch (err) {
+    console.warn('community.json could not be read:', err.message);
+    return [];
+  }
 }
 
 // ── Date helpers ──────────────────────────────────────────────
@@ -198,9 +215,49 @@ function buildMessage({ starting, ongoing }, from, days, lang) {
 }
 
 // ── Telegram delivery (splits over the 4096-char limit) ───────
+function describe(err) {
+  const bits = [err.message];
+  let c = err.cause;
+  let depth = 0;
+  while (c && depth < 4) {
+    bits.push(`cause: ${c.code || c.name || ''} ${c.message || ''}`.trim());
+    c = c.cause;
+    depth++;
+  }
+  return bits.filter(Boolean).join(' | ');
+}
+
+async function tgCall(token, method, payload, attempt = 1) {
+  const MAX = 3;
+  try {
+    const res = await fetch(`https://api.telegram.org/bot${token}/${method}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(20000)
+    });
+    const body = await res.json().catch(() => ({ ok: false, description: `HTTP ${res.status}` }));
+    if (!body.ok) {
+      throw new Error(`Telegram API rejected ${method}: ${body.description || JSON.stringify(body)}`);
+    }
+    return body;
+  } catch (err) {
+    // Retry only on transport-level failures, not on API rejections
+    const transport = !/Telegram API rejected/.test(err.message);
+    if (transport && attempt < MAX) {
+      const wait = attempt * 2000;
+      console.warn(`${method} attempt ${attempt} failed (${describe(err)}). Retrying in ${wait}ms...`);
+      await new Promise(r => setTimeout(r, wait));
+      return tgCall(token, method, payload, attempt + 1);
+    }
+    throw err;
+  }
+}
+
 async function send(text) {
-  const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chat = process.env.TELEGRAM_CHAT_ID;
+  // Trim: a stray newline or space pasted into a GitHub secret breaks the URL
+  const token = (process.env.TELEGRAM_BOT_TOKEN || '').trim();
+  const chat = (process.env.TELEGRAM_CHAT_ID || '').trim();
 
   if (DRY_RUN) {
     console.log('--- DRY RUN ---\n');
@@ -211,6 +268,14 @@ async function send(text) {
   if (!token || !chat) {
     throw new Error('TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID must be set');
   }
+  if (!/^\d+:[A-Za-z0-9_-]+$/.test(token)) {
+    throw new Error('TELEGRAM_BOT_TOKEN does not look like a valid token ' +
+      '(expected digits, a colon, then letters/digits). Check for extra spaces or a truncated paste.');
+  }
+
+  // Preflight: confirms both the network path and the token itself
+  const me = await tgCall(token, 'getMe', {});
+  console.log(`Authenticated as @${me.result.username}`);
 
   const chunks = [];
   const LIMIT = 3800;
@@ -222,18 +287,12 @@ async function send(text) {
   if (buf) chunks.push(buf);
 
   for (const [idx, chunk] of chunks.entries()) {
-    const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chat,
-        text: chunk,
-        parse_mode: 'HTML',
-        disable_web_page_preview: true
-      })
+    await tgCall(token, 'sendMessage', {
+      chat_id: chat,
+      text: chunk,
+      parse_mode: 'HTML',
+      disable_web_page_preview: true
     });
-    const body = await res.json();
-    if (!body.ok) throw new Error(`Telegram error: ${JSON.stringify(body)}`);
     console.log(`Sent chunk ${idx + 1}/${chunks.length}`);
     if (idx < chunks.length - 1) await new Promise(r => setTimeout(r, 400));
   }
@@ -243,7 +302,10 @@ async function send(text) {
 (async () => {
   try {
     const events = loadEvents();
-    console.log(`Loaded ${events.length} events from index.html`);
+    const community = loadCommunity();
+    console.log(`Loaded ${events.length} events from index.html` +
+      (community.length ? ` + ${community.length} community events` : ''));
+    const all = events.concat(community);
 
     // Today at UTC midnight, or an override for testing
     let today;
@@ -255,13 +317,13 @@ async function send(text) {
       today = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), n.getUTCDate()));
     }
 
-    const picked = selectWindow(events, today, DAYS_AHEAD);
+    const picked = selectWindow(all, today, DAYS_AHEAD);
     console.log(`${picked.starting.length} starting, ${picked.ongoing.length} ongoing over the next ${DAYS_AHEAD} days`);
 
     await send(buildMessage(picked, today, DAYS_AHEAD, LANG));
     console.log('Done.');
   } catch (err) {
-    console.error('Failed:', err.message);
+    console.error('Failed:', describe(err));
     process.exit(1);
   }
 })();

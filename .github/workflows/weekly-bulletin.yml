@@ -38,7 +38,18 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
+
+      - name: Check secrets
+        env:
+          TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          missing=0
+          if [ -z "$TOKEN" ]; then echo "::error::TELEGRAM_BOT_TOKEN is not set (Settings > Secrets and variables > Actions > Repository secrets)"; missing=1; fi
+          if [ -z "$CHAT" ];  then echo "::error::TELEGRAM_CHAT_ID is not set (Settings > Secrets and variables > Actions > Repository secrets)"; missing=1; fi
+          if [ "$missing" = "1" ]; then exit 1; fi
+          echo "Both secrets present."
 
       - name: Send bulletin
         env:

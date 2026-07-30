@@ -1,0 +1,44 @@
+{
+  "_readme": [
+    "Community events — InterNations, Meetup, dance socials, private invites.",
+    "Edit this file directly on GitHub (pencil icon), commit, done.",
+    "The app and the Monday Telegram bulletin both read it automatically.",
+    "",
+    "Fields:",
+    "  n    (required) event name",
+    "  dt   (required) start date, YYYY-MM-DD",
+    "  de   (optional) end date for multi-day events",
+    "  v    (optional) venue",
+    "  p    (optional) price, e.g. '€15' or 'Free'",
+    "  c    (optional) category — defaults to 'community'",
+    "  u    (optional) link",
+    "  desc (optional) { en: '...', de: '...' }",
+    "  t    (optional) tags array"
+  ],
+
+  "events": [
+    {
+      "n": "InterNations Vienna — Official Event",
+      "dt": "2026-08-13",
+      "v": "See InterNations for venue",
+      "p": "€12–18",
+      "u": "internations.org",
+      "desc": {
+        "en": "Monthly InterNations Vienna gathering. Check the member feed for the confirmed venue and time.",
+        "de": "Monatliches InterNations-Treffen in Wien. Ort und Uhrzeit im Mitgliederbereich."
+      },
+      "t": ["expat", "networking", "social"]
+    },
+    {
+      "n": "Bachata & Salsa Social",
+      "dt": "2026-08-07",
+      "v": "Check your usual venue",
+      "p": "€10–15",
+      "desc": {
+        "en": "Placeholder — replace with the actual social you're going to.",
+        "de": "Platzhalter — durch den tatsächlichen Social ersetzen."
+      },
+      "t": ["dance", "social", "bachata"]
+    }
+  ]
+}

@@ -829,6 +829,8 @@ var CATS=[
 {id:'jazz',l:{en:'Jazz',de:'Jazz'},i:'🎷'},
 {id:'sports',l:{en:'Sports',de:'Sport'},i:'⚡'},
 {id:'special',l:{en:'Events',de:'Events'},i:'✧'},
+{id:'community',l:{en:'Community',de:'Community'},i:'🌍'},
+{id:'food',l:{en:'Food & Drink',de:'Essen & Trinken'},i:'🍽'},
 {id:'ongoing',l:{en:'Ongoing',de:'Laufend'},i:'◆'}
 ];
 var DFS=[{id:'all',l:{en:'All',de:'Alle'}},{id:'today',l:{en:'Today',de:'Heute'}},{id:'week',l:{en:'This Week',de:'Diese Woche'}},{id:'weekend',l:{en:'Weekend',de:'Wochenende'}},{id:'month',l:{en:'This Month',de:'Diesen Monat'}},{id:'next',l:{en:'Next Month',de:'Nächsten Monat'}},{id:'new',l:{en:'Opening Soon',de:'Bald Eröffnung'}},{id:'ending',l:{en:'Ending Soon',de:'Endet bald'}}];
@@ -909,6 +911,23 @@ document.getElementById('si').addEventListener('keydown',function(e){if(e.key===
 function setSub(){var loc=S.lang==='de'?'de-AT':'en-GB';
 h.textContent=NOW.toLocaleDateString(loc,{month:'long',year:'numeric'})+' · '+(S.lang==='de'?'Live Guide':'Live Guide')}
 setSub();window.updHdrSub=setSub;})();
+(function loadCommunity(){
+  if(location.protocol==='file:')return; // fetch blocked on local file open
+  fetch('data/community.json',{cache:'no-store'}).then(function(r){
+    if(!r.ok)throw new Error(r.status);return r.json()
+  }).then(function(raw){
+    var list=Array.isArray(raw)?raw:(raw.events||[]);
+    var add=list.filter(function(e){return e&&e.n&&e.dt}).map(function(e,i){
+      return{id:90000+i,n:e.n,dt:e.dt,de:e.de,c:e.c||'community',
+        v:e.v||'',p:e.p||'',u:e.u||'',
+        desc:e.desc||{en:'',de:''},t:e.t||['community']}
+    });
+    if(!add.length)return;
+    var have={};EV.forEach(function(e){have[e.id]=1});
+    add.forEach(function(e){if(!have[e.id])EV.push(e)});
+    render();
+  }).catch(function(err){console.info('No community events loaded:',err.message)});
+})();
 rf();render();fw();
 </script>
 </body>
