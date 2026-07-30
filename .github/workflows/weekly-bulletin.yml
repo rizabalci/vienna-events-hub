@@ -51,6 +51,7 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CALENDAR_ICS_URL: ${{ secrets.CALENDAR_ICS_URL }}
           LANG_MODE: ${{ github.event.inputs.lang || 'en' }}
           START_DATE: ${{ github.event.inputs.start_date || '' }}
           DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}

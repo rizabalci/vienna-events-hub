@@ -11,6 +11,8 @@
  * Optional:
  *   LANG_MODE   'en' (default) or 'de'
  *   MAX_PER_SECTION  cap events listed per section (default: no cap)
+ *   CALENDAR_ICS_URL  private Google Calendar iCal address (optional)
+ *   CALENDAR_ICS_FILE local .ics file path, for testing (optional)
  *   DRY_RUN     'true' to print instead of sending
  */
 
@@ -74,6 +76,120 @@ function loadEvents() {
   const events = new Function('return ' + literal + ';')();
   if (!Array.isArray(events)) throw new Error('EV did not evaluate to an array');
   return events;
+}
+
+// ── Google Calendar iCal feed (RSVP'd events) ─────────────────
+// Reads the private iCal URL from CALENDAR_ICS_URL (GitHub secret).
+// Anything on that calendar — InterNations RSVPs, dance socials — appears
+// in the bulletin under Community. Skipped silently when not configured.
+
+function unfoldICS(text) {
+  // Continuation lines start with a space or tab (RFC 5545 folding)
+  return text.replace(/\r\n/g, '\n').replace(/\n[ \t]/g, '');
+}
+
+function unescapeICS(v) {
+  return String(v || '')
+    .replace(/\\n/gi, ' ')
+    .replace(/\\,/g, ',')
+    .replace(/\\;/g, ';')
+    .replace(/\\\\/g, '\\')
+    .trim();
+}
+
+function parseICSDate(raw) {
+  // Forms: 20260813 | 20260813T180000 | 20260813T160000Z
+  const m = String(raw).match(/^(\d{4})(\d{2})(\d{2})(?:T(\d{2})(\d{2}))?/);
+  if (!m) return null;
+  return {
+    date: `${m[1]}-${m[2]}-${m[3]}`,
+    time: m[4] ? `${m[4]}:${m[5]}` : null,
+    utc: /Z$/.test(raw)
+  };
+}
+
+function parseICS(text) {
+  const events = [];
+  const blocks = unfoldICS(text).split('BEGIN:VEVENT').slice(1);
+
+  for (const block of blocks) {
+    const body = block.split('END:VEVENT')[0];
+    const get = (prop) => {
+      const m = body.match(new RegExp('^' + prop + '(?:;[^:\\n]*)?:(.*)$', 'mi'));
+      return m ? m[1].trim() : null;
+    };
+
+    const summary = unescapeICS(get('SUMMARY'));
+    const dtstartRaw = get('DTSTART');
+    if (!summary || !dtstartRaw) continue;
+    const start = parseICSDate(dtstartRaw);
+    if (!start) continue;
+
+    // DTEND for all-day events is exclusive per RFC — subtract one day.
+    // Timed events ending early next morning (a party past midnight) are
+    // one evening, not a two-day span.
+    let endDate = null;
+    const dtendRaw = get('DTEND');
+    if (dtendRaw) {
+      const end = parseICSDate(dtendRaw);
+      if (end) {
+        if (!end.time) {
+          const d = parseISO(end.date);
+          d.setUTCDate(d.getUTCDate() - 1);
+          endDate = d.toISOString().slice(0, 10);
+        } else {
+          const overnight = end.date !== start.date && parseInt(end.time, 10) <= 6;
+          endDate = overnight ? start.date : end.date;
+        }
+      }
+    }
+    if (endDate === start.date) endDate = null;
+
+    // Google's UTC times shift the local hour; show date-only for those,
+    // exact time only when the feed carries a floating/local time.
+    const timeLabel = (start.time && !start.utc) ? start.time : null;
+
+    const location = unescapeICS(get('LOCATION'));
+    const url = get('URL');
+
+    events.push({
+      n: summary,
+      dt: start.date,
+      de: endDate || undefined,
+      c: 'community',
+      v: timeLabel ? (location ? `${timeLabel} · ${location}` : timeLabel) : (location || ''),
+      p: '',
+      u: url || '',
+      eu: url && /^https?:\/\//i.test(url) ? url.trim() : undefined,
+      desc: { en: '', de: '' },
+      t: ['calendar', 'rsvp']
+    });
+  }
+  return events;
+}
+
+async function loadCalendar() {
+  const file = process.env.CALENDAR_ICS_FILE;          // local testing
+  const url = (process.env.CALENDAR_ICS_URL || '').trim();
+
+  let text = null;
+  try {
+    if (file && fs.existsSync(file)) {
+      text = fs.readFileSync(file, 'utf8');
+    } else if (url) {
+      const res = await fetch(url, { signal: AbortSignal.timeout(20000) });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      text = await res.text();
+    }
+  } catch (err) {
+    // Calendar problems must never kill the bulletin
+    console.warn('Calendar feed could not be read:', err.message);
+    return [];
+  }
+  if (!text || !/BEGIN:VCALENDAR/i.test(text)) return [];
+
+  const parsed = parseICS(text).map((e, i) => Object.assign({ id: 95000 + i }, e));
+  return parsed;
 }
 
 // ── Community events (data/community.json) ────────────────────
@@ -190,6 +306,14 @@ function venueUrl(ev) {
 // Targeted search — reliably lands on the event's own page in one click
 function searchUrl(ev) {
   const name = String(ev.n || '');
+  const fromCalendar = (ev.t || []).includes('calendar');
+
+  // Calendar entries: search the name only. The v field carries "21:00 · venue"
+  // noise, and these are RSVPs, not things to buy tickets for.
+  if (fromCalendar) {
+    return `https://duckduckgo.com/?q=${encodeURIComponent(name + ' Wien')}`;
+  }
+
   const venue = String(ev.v || '');
   const needsVenue = venue && !name.toLowerCase().includes(venue.toLowerCase());
 
@@ -231,7 +355,7 @@ function evLine(ev, lang, showDate) {
   // 🎟 = link goes straight to the event page. 🔍 = search that finds it.
   sub.push(`<a href="${esc(infoUrl(ev))}">${hasDirect(ev) ? '🎟' : '🔍'}</a>`);
   const vu = venueUrl(ev);
-  if (vu) sub.push(`<a href="${esc(vu)}">🏛</a>`);
+  if (vu && vu !== infoUrl(ev)) sub.push(`<a href="${esc(vu)}">🏛</a>`);
 
   return `${head}\n     <i>${sub.join(' · ')}</i>`;
 }
@@ -274,7 +398,7 @@ function ongoingLine(ev, lang) {
   const bits = [];
   if (ev.v) bits.push(esc(ev.v));
   const vu = venueUrl(ev);
-  if (vu) bits.push(`<a href="${esc(vu)}">🏛</a>`);
+  if (vu && vu !== infoUrl(ev)) bits.push(`<a href="${esc(vu)}">🏛</a>`);
   const tail = bits.length ? ` <i>· ${bits.join(' · ')}</i>` : '';
   return `  • ${name}${until}${tail}`;
 }
@@ -442,9 +566,19 @@ async function send(text) {
   try {
     const events = loadEvents();
     const community = loadCommunity();
+    const calendar = await loadCalendar();
+
+    // Dedup: if a calendar event matches a community.json entry by name+date,
+    // keep the calendar one (it carries the RSVP link and exact time).
+    const calKeys = new Set(calendar.map(e =>
+      e.n.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 24) + '|' + e.dt));
+    const communityKept = community.filter(e =>
+      !calKeys.has(e.n.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 24) + '|' + e.dt));
+
     console.log(`Loaded ${events.length} events from index.html` +
-      (community.length ? ` + ${community.length} community events` : ''));
-    const all = events.concat(community);
+      (communityKept.length ? ` + ${communityKept.length} community` : '') +
+      (calendar.length ? ` + ${calendar.length} from calendar` : ''));
+    const all = events.concat(communityKept, calendar);
 
     // Today at UTC midnight, or an override for testing
     let today;
