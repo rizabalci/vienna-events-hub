@@ -923,6 +923,7 @@ function dtag(e){var s=pd(e.dt),en=e.de?pd(e.de):s;if(e.dt==='2026-02-04')return
 function ddsp(e){return e.de?fd(e.dt)+' → '+fd(e.de):fd(e.dt)}
 function ec(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
 function mapsUrl(e){if(!e.v)return null;if(/various|across vienna|wandering|parks and|tba|check your|and squares/i.test(e.v))return null;return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(e.v+', Wien')+'&travelmode=transit'}
+function waUrl(e){var L=['🎪 '+e.n,'📅 '+e.dt+(e.de?' → '+e.de:'')];if(e.v)L.push('📍 '+e.v);if(e.p)L.push('💶 '+e.p);L.push(e.eu||'https://rizabalci.github.io/vienna-events-hub/');return 'https://wa.me/?text='+encodeURIComponent(L.join('\n'))}
 function gu(q){return'https://www.google.com/search?q='+encodeURIComponent(q+' Wien 2026')}
 
 function filter(){
@@ -975,6 +976,7 @@ function render(){
       '</div><div class="ec-actions">'+
       '<a href="https://'+e.u+'" target="_blank">🔗 '+tx('info')+'</a>'+
       '<a href="'+gu(e.n)+'" target="_blank">🔍 Google</a>'+
+      '<a href="'+waUrl(e)+'" target="_blank" rel="noopener">📲 WhatsApp</a>'+
       '<button class="ec-bk'+(ib?' saved':'')+'" onclick="tbk('+e.id+')">'+(ib?'★':'☆')+' '+tx('save')+'</button>'+
       '</div></div>';
   });
