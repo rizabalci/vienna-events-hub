@@ -90,6 +90,8 @@ const SOURCES = [
     url: `https://www.songkick.com/metro-areas/26771-austria-vienna/${new Date().getFullYear()}` },
   { type: 'songkick', name: `Songkick Vienna (${new Date().getFullYear() + 1})`,
     url: `https://www.songkick.com/metro-areas/26771-austria-vienna/${new Date().getFullYear() + 1}` },
+  { type: 'stadthalle', name: 'Wiener Stadthalle (official calendar)',
+    url: 'https://www.stadthalle.com/de/events' },
 
   // ── Meetup groups ────────────────────────────────────────────
   // Every Meetup group has an iCal feed: meetup.com/GROUP-SLUG/events/ical/
@@ -150,6 +152,30 @@ function parseSongkick(html) {
       eu: 'https://www.songkick.com' + link.split('"')[0],
       desc: { en: '', de: '' },
       t: ['feed', 'songkick']
+    });
+  }
+  return out;
+}
+
+function parseStadthalle(html) {
+  const out = [];
+  for (const block of html.split('<li class="event-item').slice(1)) {
+    const chunk = block.slice(0, 4000);
+    if (/class="mark">\s*Abgesagt/i.test(chunk)) continue;   // cancelled
+    const link = (chunk.match(/href="(\/de\/events\/alle-events\/\d+\/[^"]+)"/) || [])[1];
+    const name = (chunk.match(/Detailinfos zu <\/span>([^<]+)</) || [])[1];
+    const alt = (chunk.match(/alt="([^"]+)"/) || [])[1] || '';
+    const dm = alt.match(/(\d{2})\.(\d{2})\.(\d{4})\s*@\s*([^©"]+)/);
+    if (!link || !name || !dm) continue;
+    const hall = dm[4].replace(/Wiener Stadthalle,?\s*/i, '').trim();
+    out.push({
+      n: decodeEntities(name.trim()),
+      dt: `${dm[3]}-${dm[2]}-${dm[1]}`,
+      v: hall ? 'Stadthalle ' + hall : 'Wiener Stadthalle',
+      c: 'concert', p: '', u: 'stadthalle.com',
+      eu: 'https://www.stadthalle.com' + link,
+      desc: { en: '', de: '' },
+      t: ['feed', 'stadthalle']
     });
   }
   return out;
@@ -248,7 +274,9 @@ const musicUrl = ev => 'https://open.spotify.com/search/' + encodeURIComponent(S
   for (const src of SOURCES) {
     try {
       const text = await fetchText(src.url);
-      const items = src.type === 'songkick' ? parseSongkick(text) : parseICalSource(text);
+      const items = src.type === 'songkick' ? parseSongkick(text)
+        : src.type === 'stadthalle' ? parseStadthalle(text)
+        : parseICalSource(text);
       console.log(`${src.name}: ${items.length} events`);
       candidates = candidates.concat(items.map(x =>
         Object.assign({ src: src.name }, x, src.cat ? { c: src.cat } : {})));

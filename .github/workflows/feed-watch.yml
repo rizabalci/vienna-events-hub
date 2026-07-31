@@ -37,10 +37,11 @@ jobs:
         run: |
           git config user.name "feed-watch"
           git config user.email "actions@github.com"
-          if ! git diff --quiet data/; then
-            git add data/pending.json data/feed-seen.json
-            git commit -m "Feed watch: new pending events ($(date -u +%F))"
-            git push
-          else
+          git add -A data/
+          if git diff --cached --quiet; then
             echo "No changes to commit."
+          else
+            git commit -m "Feed watch: new pending events ($(date -u +%F))"
+            git pull --rebase
+            git push
           fi

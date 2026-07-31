@@ -33,11 +33,11 @@ jobs:
         run: |
           git config user.name "telegram-check"
           git config user.email "actions@github.com"
-          git pull --rebase
-          if ! git diff --quiet data/; then
-            git add data/tg-offset.json data/pending.json data/feed-seen.json
-            git commit -m "Telegram check: state update"
-            git push
-          else
+          git add -A data/
+          if git diff --cached --quiet; then
             echo "No changes."
+          else
+            git commit -m "Telegram check: state update"
+            git pull --rebase
+            git push
           fi
