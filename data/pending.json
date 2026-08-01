@@ -4789,5 +4789,746 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-07-31"
+ },
+ {
+  "n": "EUROTEURO",
+  "dt": "2026-08-07",
+  "v": "Hyblerpark",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43347949-euroteuro-at-hyblerpark",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Papangu",
+  "dt": "2026-09-02",
+  "v": "TüWi",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43332400-papangu-at-tuwi",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Rainhard Fendrich",
+  "dt": "2026-09-03",
+  "v": "20:00 · Steinbruch St. Margarethen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42727965-rainhard-fendrich-at-steinbruch-st-margarethen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Steve Blanco",
+  "dt": "2026-09-03",
+  "v": "Salon Brahms",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43328041-steve-blanco-at-salon-brahms",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Zackavelli",
+  "dt": "2026-09-03",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43124060-zackavelli-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Anja Schneider",
+  "dt": "2026-09-04",
+  "v": "Praterdome",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43344750-anja-schneider-at-praterdome",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Beatpatrol Festival 2026",
+  "dt": "2026-09-04",
+  "v": "14:00 · Galopprennbahn Freudenau",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/129576-beatpatrol/id/43128266-beatpatrol-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Ductape",
+  "dt": "2026-09-04",
+  "v": "das LOT",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42989526-ductape-at-das-lot",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Festival Manufaktur der Künste 2026",
+  "dt": "2026-09-04",
+  "v": "18:00 · Zacherlfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3779827-manufaktur-der-kunste/id/43149492-festival-manufaktur-der-knste-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Francis of Delirium",
+  "dt": "2026-09-04",
+  "v": "Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43171263-francis-of-delirium-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Lukas Lauermann",
+  "dt": "2026-09-04",
+  "v": "Schaufensterkonzert",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43292730-lukas-lauermann-at-schaufensterkonzert",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Maite Kelly",
+  "dt": "2026-09-04",
+  "v": "20:00 · Halle F, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42891435-maite-kelly-at-halle-f-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Rainhard Fendrich",
+  "dt": "2026-09-04",
+  "v": "20:00 · Steinbruch St. Margarethen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42682245-rainhard-fendrich-at-steinbruch-st-margarethen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Shut Up Club",
+  "dt": "2026-09-04",
+  "v": "Triebwerk",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43345141-shut-up-club-at-triebwerk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Alok",
+  "dt": "2026-09-05",
+  "v": "19:00 · Beatpatrol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43170643-alok-at-beatpatrol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "marlo grosshardt",
+  "dt": "2026-09-05",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42803607-marlo-grosshardt-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Mary Broadcast",
+  "dt": "2026-09-05",
+  "v": "Volksstimmefest",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43221298-mary-broadcast-at-volksstimmefest",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Miss Mellow and The Good Library",
+  "dt": "2026-09-05",
+  "v": "19:00 · Kramladen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43034518-miss-mellow-at-kramladen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Ohl",
+  "dt": "2026-09-05",
+  "v": "20:30 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287574-ohl-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Ursula Strauss",
+  "dt": "2026-09-05",
+  "v": "19:30 · Sommerarena Baden",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43086109-ursula-strauss-at-sommerarena-baden",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Wildstyle & Tattoo Messe 2026",
+  "dt": "2026-09-05",
+  "v": "Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3421713-wildstyle-tattoo-messe/id/43114715-wildstyle--tattoo-messe-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Farid Bang",
+  "dt": "2026-09-06",
+  "v": "20:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43137938-farid-bang-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Anais",
+  "dt": "2026-09-07",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42869582-anais-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "The BossHoss",
+  "dt": "2026-09-07",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42950478-bosshoss-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Festival Manufaktur der Künste 2026",
+  "dt": "2026-09-08",
+  "v": "18:00 · Zacherlfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3779827-manufaktur-der-kunste/id/43149493-festival-manufaktur-der-knste-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "The Gardener & The Tree",
+  "dt": "2026-09-08",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43060435-gardener-and-the-tree-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Bayonne",
+  "dt": "2026-09-09",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43184884-bayonne-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Gob",
+  "dt": "2026-09-09",
+  "v": "20:30 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43269007-gob-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Molden",
+  "dt": "2026-09-09",
+  "v": "19:30 · Theater Im Park",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42912304-molden-at-theater-im-park",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "reezy",
+  "dt": "2026-09-09",
+  "v": "20:00 · Raiffeisen Halle, Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43128905-reezy-at-raiffeisen-halle-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Fennesz",
+  "dt": "2026-09-10",
+  "v": "20:00 · ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43341937-fennesz-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Stadt",
+  "dt": "2026-09-10",
+  "v": "19:00 · Sommerarena Baden",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43001004-stadt-at-sommerarena-baden",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Kreiml & Samurai",
+  "dt": "2026-09-11",
+  "v": "19:30 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42678737-kreiml-and-samurai-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Lukas Lauermann",
+  "dt": "2026-09-11",
+  "v": "Window Words & Sound",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43299830-lukas-lauermann-at-window-words-and-sound",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Made in Italy",
+  "dt": "2026-09-11",
+  "v": "19:00 · All in Club",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43206204-made-in-italy-at-all-in-club",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "SHACKE ONE",
+  "dt": "2026-09-11",
+  "v": "20:00 · dasWERK",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43221003-shacke-one-at-daswerk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Shindy",
+  "dt": "2026-09-11",
+  "v": "20:00 · Raiffeisen Halle, Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42315387-shindy-at-raiffeisen-halle-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "The Music of Hans Zimmer",
+  "dt": "2026-09-11",
+  "v": "20:00 · Sommerarena Baden",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43001010-music-of-hans-zimmer-at-sommerarena-baden",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
+ },
+ {
+  "n": "Der Nussknacker - Ukrainisches Klassisches Ballett",
+  "dt": "2026-12-08",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51285/Der-Nussknacker-Ukrainisches-Klassisches-Ballett",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-01"
  }
 ]
