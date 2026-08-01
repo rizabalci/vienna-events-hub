@@ -266,6 +266,10 @@ function mapsUrl(ev) {
   return `https://www.google.com/maps/dir/?api=1&${origin}destination=${encodeURIComponent(v)}&travelmode=transit`;
 }
 const musicUrl = ev => 'https://open.spotify.com/search/' + encodeURIComponent(String(ev.n).trim());
+const waUrl = ev => {
+  const when = ev.de && ev.de !== ev.dt ? `${ev.dt} → ${ev.de}` : ev.dt;
+  return 'https://wa.me/?text=' + encodeURIComponent('🎪 ' + ev.n + ' — ' + when + '\n' + (ev.eu || 'https://rizabalci.github.io/vienna-events-hub/'));
+};
 
 // ── Main ──────────────────────────────────────────────────────
 (async () => {
@@ -378,7 +382,7 @@ const musicUrl = ev => 'https://open.spotify.com/search/' + encodeURIComponent(S
       const range = x.de && x.de !== x.dt ? `${fmt(x.dt)}–${fmt(x.de)}` : fmt(x.dt);
       const star = isWatch(x) ? '⭐ ' : (isTurkishGuess(x) ? '🔸 ' : '');
       const mu = mapsUrl(x);
-      const extras = (mu ? ` · <a href="${esc(mu)}">🗺</a>` : '') + ` · <a href="${esc(musicUrl(x))}">🎵</a>`;
+      const extras = (mu ? ` · <a href="${esc(mu)}">🗺</a>` : '') + ` · <a href="${esc(musicUrl(x))}">🎵</a>` + ` · <a href="${esc(waUrl(x))}">📲</a>`;
       return `• ${star}${range} <a href="${esc(x.eu)}">${esc(x.n)}</a>${x.v ? ' · ' + esc(x.v) : ''}${extras}`;
     };
     const watchHits = fresh.filter(x => isWatch(x) || isTurkishGuess(x));
