@@ -5530,5 +5530,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-08-01"
+ },
+ {
+  "n": "EiT",
+  "dt": "2026-09-03",
+  "v": "20:30 · Kramladen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43349101-eit-at-kramladen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-01"
  }
 ]
