@@ -5568,5 +5568,24 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-08-03"
+ },
+ {
+  "n": "22. Afrika Tage Wien 2026",
+  "dt": "2026-08-18",
+  "v": "14:00 · Donauinsel",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3788073-22-afrika-tage-wien/id/43241267-22-afrika-tage-wien-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-08-04"
  }
 ]
