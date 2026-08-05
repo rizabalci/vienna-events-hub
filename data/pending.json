@@ -5587,5 +5587,43 @@
   ],
   "_src": "Songkick Vienna (2026)",
   "_found": "2026-08-04"
+ },
+ {
+  "n": "Anais",
+  "dt": "2027-01-14",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43351636-anais-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-08-05"
+ },
+ {
+  "n": "Europe",
+  "dt": "2027-01-27",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43351891-europe-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-08-05"
  }
 ]
