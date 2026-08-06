@@ -5625,5 +5625,24 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-08-05"
+ },
+ {
+  "n": "Neuschnee and Hans Im Glück",
+  "dt": "2026-08-09",
+  "v": "20:00 · Kongresspark",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43354176-neuschnee-at-kongresspark",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-08-06"
  }
 ]
