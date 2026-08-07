@@ -5644,5 +5644,62 @@
   ],
   "_src": "Songkick Vienna (2026)",
   "_found": "2026-08-06"
+ },
+ {
+  "n": "Internal Bleeding",
+  "dt": "2026-08-13",
+  "v": "19:30 · Weberknecht",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43356014-internal-bleeding-at-weberknecht",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-07"
+ },
+ {
+  "n": "Tosca 2026",
+  "dt": "2026-08-19",
+  "v": "20:00 · Steinbruch St. Margarethen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/1162993-tosca/id/42705954-tosca-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-07"
+ },
+ {
+  "n": "Konstantinos Argiros",
+  "dt": "2026-11-30",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51484/Konstantinos-Argiros",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-07"
  }
 ]
