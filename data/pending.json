@@ -5701,5 +5701,119 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-08-07"
+ },
+ {
+  "n": "BAIBA",
+  "dt": "2026-08-19",
+  "v": "19:00 · MuseumsQuartier (MQ)",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43353029-baiba-at-museumsquartier",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-08-08"
+ },
+ {
+  "n": "Скубут (Skubut)",
+  "dt": "2026-08-21",
+  "v": "Kramladen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43340623-skubut-skubut-at-kramladen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-08"
+ },
+ {
+  "n": "Andrea Bocelli",
+  "dt": "2026-08-22",
+  "v": "20:00 · Ernst Happel Stadion",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42953336-andrea-bocelli-at-ernst-happel-stadion",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-08"
+ },
+ {
+  "n": "Komm Ein Bisschen Mit Nach Italien",
+  "dt": "2026-08-22",
+  "v": "Tschauner Bühne",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43103509-komm-ein-bisschen-mit-nach-italien-at-tschauner-buhne",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-08"
+ },
+ {
+  "n": "Saxofour",
+  "dt": "2026-10-02",
+  "v": "19:30 · Kulturverein \"Die Bühne\" Purkersdorf bei Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43355941-saxofour-at-kulturverein-die-buhne-purkersdorf-bei-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-08-08"
+ },
+ {
+  "n": "The Witch of Konotop",
+  "dt": "2027-01-29",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51486/The-Witch-of-Konotop",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-08"
  }
 ]
