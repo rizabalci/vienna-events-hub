@@ -5815,5 +5815,81 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-08-08"
+ },
+ {
+  "n": "Zimmer",
+  "dt": "2026-08-22",
+  "v": "20:00 · Bellini Hall",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43310017-zimmer-at-bellini-hall",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-09"
+ },
+ {
+  "n": "Blood Orange",
+  "dt": "2026-08-26",
+  "v": "19:30 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43040277-blood-orange-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-09"
+ },
+ {
+  "n": "Total Chaos",
+  "dt": "2026-08-26",
+  "v": "20:30 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287575-total-chaos-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-09"
+ },
+ {
+  "n": "Tocotronic",
+  "dt": "2026-08-27",
+  "v": "19:30 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43015381-tocotronic-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-09"
  }
 ]
