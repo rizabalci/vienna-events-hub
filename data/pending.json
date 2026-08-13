@@ -5967,5 +5967,43 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-08-12"
+ },
+ {
+  "n": "Mary Broadcast",
+  "dt": "2026-08-27",
+  "v": "20:00 · Spittelau / Ubahnstars",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43364529-mary-broadcast-at-spittelau-ubahnstars",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-13"
+ },
+ {
+  "n": "Sistas",
+  "dt": "2026-09-03",
+  "v": "18:00 · Reumannplatz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43364556-sistas-at-reumannplatz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-13"
  }
 ]
