@@ -6005,5 +6005,138 @@
   ],
   "_src": "Songkick Vienna (+1 month)",
   "_found": "2026-08-13"
+ },
+ {
+  "n": "Orgel",
+  "dt": "2026-08-20",
+  "v": "20:30 · Stephansdom",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43016299-orgel-at-stephansdom",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-14"
+ },
+ {
+  "n": "Anna Ullrich",
+  "dt": "2026-08-28",
+  "v": "23:00 · PRATERSTRASSE",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43353618-anna-ullrich-at-praterstrasse",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-14"
+ },
+ {
+  "n": "Anna Ullrich",
+  "dt": "2026-08-28",
+  "v": "17:00 · Gleis 19",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43353625-anna-ullrich-at-gleis-19",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-14"
+ },
+ {
+  "n": "Sommerfrische am OWA 2026",
+  "dt": "2026-08-28",
+  "v": "Otto Wagner Areal | Garten Pavillon 12",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3796908-sommerfrische-am-owa/id/43329885-sommerfrische-am-owa-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-14"
+ },
+ {
+  "n": "Zug Nach Wien and Mountain Crew",
+  "dt": "2026-08-28",
+  "v": "SCS - Shopping City Süd",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43333701-zug-nach-wien-at-scs-shopping-city-sud",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-14"
+ },
+ {
+  "n": "The White Buffalo",
+  "dt": "2026-08-29",
+  "v": "20:00 · Werkstätten- & Kulturhaus (WUK)",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43121334-white-buffalo-at-werkstatten-and-kulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-14"
+ },
+ {
+  "n": "Der Gestiefelte Kater",
+  "dt": "2027-01-24",
+  "v": "14:30 · Peterskirche",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43366200-der-gestiefelte-kater-at-peterskirche",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-08-14"
  }
 ]
