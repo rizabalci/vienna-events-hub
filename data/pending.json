@@ -6138,5 +6138,119 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-08-14"
+ },
+ {
+  "n": "22. Afrika Tage Wien 2026",
+  "dt": "2026-08-22",
+  "v": "14:00 · Donauinsel",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3788073-22-afrika-tage-wien/id/43241268-22-afrika-tage-wien-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-15"
+ },
+ {
+  "n": "Pete Art",
+  "dt": "2026-08-29",
+  "v": "19:30 · Tschauner Bühne",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43103486-pete-art-at-tschauner-buhne",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-15"
+ },
+ {
+  "n": "The Margaritas",
+  "dt": "2026-08-29",
+  "v": "19:00 · Kulturankerzentrum Schlingermarkt",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43140253-margaritas-at-kulturankerzentrum-schlingermarkt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-15"
+ },
+ {
+  "n": "Elina Garanca",
+  "dt": "2026-08-30",
+  "v": "19:30 · Theater Im Park",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42912306-elina-garanca-at-theater-im-park",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-08-15"
+ },
+ {
+  "n": "Kaffkiez",
+  "dt": "2026-08-30",
+  "v": "20:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42743797-kaffkiez-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-15"
+ },
+ {
+  "n": "Orgel",
+  "dt": "2026-09-03",
+  "v": "20:30 · Stephansdom",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43097815-orgel-at-stephansdom",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-15"
  }
 ]
