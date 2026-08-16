@@ -6252,5 +6252,119 @@
   ],
   "_src": "Songkick Vienna (+1 month)",
   "_found": "2026-08-15"
+ },
+ {
+  "n": "Carl Haze",
+  "dt": "2026-08-16",
+  "v": "V.c.b.c",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43369455-carl-haze-at-vcbc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-16"
+ },
+ {
+  "n": "Opera at Mozarthaus 2026",
+  "dt": "2026-08-20",
+  "v": "19:30 · Mozarthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3800897-opera-at-mozarthaus/id/43369062-opera-at-mozarthaus-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-16"
+ },
+ {
+  "n": "Zimmer",
+  "dt": "2026-08-29",
+  "v": "20:00 · Bellini Hall",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43310018-zimmer-at-bellini-hall",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-16"
+ },
+ {
+  "n": "Avinash",
+  "dt": "2026-08-30",
+  "v": "23:00 · Ignis Et Nox Club",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43348916-avinash-at-ignis-et-nox-club",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-16"
+ },
+ {
+  "n": "Wiener Philharmoniker",
+  "dt": "2026-08-31",
+  "v": "19:30 · Theater Im Park",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42912343-wiener-philharmoniker-at-theater-im-park",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-16"
+ },
+ {
+  "n": "Carl Haze",
+  "dt": "2026-09-04",
+  "v": "Praterdome",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43369456-carl-haze-at-praterdome",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-16"
  }
 ]
