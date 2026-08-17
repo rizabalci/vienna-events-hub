@@ -8,7 +8,7 @@
 <title>Wien Events Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--a:#C9A84C;--ad:rgba(201,168,76,.15);--bg:#0D0D1A;--sf:rgba(255,255,255,.04);--sf2:rgba(255,255,255,.07);--tx:#E8E4DC;--tm:#7A7A9A;--bd:rgba(201,168,76,.15);--ub:linear-gradient(135deg,#C9A84C,#A8893E);--rd:#E57373;--gn:#66BB6A;--st:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px)}
+:root{--a:#C9A84C;--ad:rgba(201,168,76,.15);--bg:#0D0D1A;--sf:rgba(255,255,255,.04);--sf2:rgba(255,255,255,.07);--tx:#E8E4DC;--tm:#9797B8;--bd:rgba(201,168,76,.15);--ub:linear-gradient(135deg,#C9A84C,#A8893E);--rd:#E57373;--gn:#66BB6A;--st:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px)}
 .light{--a:#9B7B2C;--ad:rgba(155,123,44,.12);--bg:#F5F3EE;--sf:#FFFFFF;--sf2:#F0EDE6;--tx:#1A1A2E;--tm:#6A6A80;--bd:rgba(155,123,44,.2);--ub:linear-gradient(135deg,#9B7B2C,#7A6122);--rd:#C62828;--gn:#2E7D32}
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;overflow:hidden}
@@ -36,24 +36,25 @@ main{flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;p
 .rh{padding:10px 16px 4px;font-size:12px;color:var(--tm)}
 .rh strong{color:var(--a)}
 .upd{font-size:9px;color:var(--tm);padding:0 16px 8px;opacity:.6}
-.el{padding:6px 16px 80px;display:flex;flex-direction:column;gap:8px}
-.ec{border:1px solid var(--bd);border-radius:12px;background:var(--sf);overflow:hidden;animation:fi .25s both}
+.el{padding:10px 16px 80px;display:flex;flex-direction:column;gap:14px}
+.ec{border:1px solid var(--bd);border-radius:14px;background:var(--sf);overflow:hidden;animation:fi .25s both}
 .ec:nth-child(2){animation-delay:.04s}.ec:nth-child(3){animation-delay:.08s}.ec:nth-child(4){animation-delay:.12s}
-.ec-top{padding:10px 12px 8px}
-.ec-date{font-size:10px;font-weight:700;color:var(--a);margin-bottom:2px;display:flex;align-items:center;gap:6px}
-.ec-date .live{background:var(--rd);color:#fff;padding:1px 5px;border-radius:4px;font-size:8px;font-weight:700}
-.ec-date .soon{background:var(--ad);color:var(--a);padding:1px 5px;border-radius:4px;font-size:8px}
-.ec-date .ending{background:rgba(229,115,115,.15);color:var(--rd);padding:1px 5px;border-radius:4px;font-size:8px}
-.ec-name{font-size:14px;font-weight:600;color:var(--tx);line-height:1.3;margin-bottom:3px}
-.ec-venue{font-size:11px;color:var(--tm);margin-bottom:3px}
-.ec-desc{font-size:11px;color:var(--tm);line-height:1.5;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.ec-meta{display:flex;gap:5px;flex-wrap:wrap;align-items:center;margin-top:6px}
-.ec-tag{padding:2px 6px;border-radius:5px;font-size:9px;font-weight:600}
+.ec-top{padding:16px 16px 12px}
+.ec-date{font-size:11.5px;font-weight:700;color:var(--a);margin-bottom:5px;display:flex;align-items:center;gap:6px}
+.ec-date .live{background:var(--rd);color:#fff;padding:2px 6px;border-radius:4px;font-size:9.5px;font-weight:700}
+.ec-date .soon{background:var(--ad);color:var(--a);padding:2px 6px;border-radius:4px;font-size:9.5px}
+.ec-date .ending{background:rgba(229,115,115,.15);color:var(--rd);padding:2px 6px;border-radius:4px;font-size:9.5px}
+.ec-name{font-size:16.5px;font-weight:700;color:var(--tx);line-height:1.35;margin-bottom:5px}
+.ec-venue{font-size:13px;color:var(--tm);margin-bottom:6px;line-height:1.4}
+.ec-desc{font-size:13px;color:var(--tm);line-height:1.6;margin-top:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ec-meta{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-top:10px}
+.ec-tag{padding:3px 8px;border-radius:6px;font-size:11px;font-weight:600}
 .ec-cat{background:var(--ad);color:var(--a)}
 .ec-price{background:rgba(102,187,106,.12);color:var(--gn)}
-.ec-actions{display:flex;border-top:1px solid var(--bd)}
-.ec-actions a,.ec-actions button{flex:1;padding:8px;border:none;background:transparent;color:var(--a);font-size:11px;font-weight:600;cursor:pointer;font-family:inherit;text-decoration:none;text-align:center;transition:background .15s}
-.ec-actions a:not(:last-child),.ec-actions button:not(:last-child){border-right:1px solid var(--bd)}
+.ec-actions{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--bd)}
+.ec-actions a,.ec-actions button{padding:12px 4px;border:none;background:transparent;color:var(--a);font-size:12.5px;font-weight:600;cursor:pointer;font-family:inherit;text-decoration:none;text-align:center;transition:background .15s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ec-actions a:nth-child(odd),.ec-actions button:nth-child(odd){border-right:1px solid var(--bd)}
+.ec-actions a:nth-child(-n+2),.ec-actions button:nth-child(-n+2){border-bottom:1px solid var(--bd)}
 .ec-actions a:active,.ec-actions button:active{background:var(--ad)}
 .ec-bk{color:var(--tm)!important}.ec-bk.saved{color:var(--a)!important}
 .gb{margin:4px 0;padding:10px;border:1px solid var(--bd);border-radius:12px;background:var(--sf);text-align:center}
@@ -111,7 +112,11 @@ try{var p=JSON.parse(localStorage.getItem('weh4'));if(p){S.dark=!!p.d;S.lang=p.l
 try{var b=JSON.parse(localStorage.getItem('wehbk4'));if(Array.isArray(b))S.bk=b}catch(e){}
 
 var EV=[
-{id:1010,eu:"https://www.alpenverein.at",n:"Alpenverein Vienna Sections — Guided Tours & Courses",dt:"2026-01-01",de:"2026-12-31",c:"tour",v:"Vienna sections: Edelweiss, Austria, Wien",p:"Membership ~€60/yr",desc:{en:"The Austrian Alpine Club's Vienna sections run year-round guided hikes, alpine tours, climbing and ski courses — from easy Wienerwald walks to high-alpine weekends. Membership includes alpine insurance and hut discounts.",de:"Die Wiener Sektionen des Alpenvereins führen ganzjährig geführte Wanderungen, Hochtouren, Kletter- und Skikurse — vom Wienerwald bis zum Hochalpin-Wochenende. Mitgliedschaft inkludiert Bergekostenversicherung und Hüttenrabatte."},u:"alpenverein.at",t:["hiking","alpine","guided","courses"]},
+{id:1014,eu:"https://www.theater-wien.at/de/programm",n:"Theater an der Wien — Backstage Tours (EN/DE)",dt:"2026-01-01",de:"2026-12-31",c:"tour",v:"Theater an der Wien",p:"~€10",desc:{en:"Guided backstage tours in English and German run periodically year-round — check the program page for the next date. Runs alongside the main season, which restarts in September.",de:"Geführte Backstage-Touren auf Deutsch und Englisch laufen periodisch das ganze Jahr — nächsten Termin auf der Programmseite prüfen. Läuft neben der Hauptsaison, die im September neu startet."},u:"theater-wien.at",t:["backstage","guided","opera-house"]},
+
+{id:1010,eu:"https://programm.alpenverein.wien/lv-wien/programm/touren/index.php",n:"Alpenverein Wien — Live Tour Program (Search by Date)",dt:"2026-01-01",de:"2026-12-31",c:"tour",v:"Meeting points vary by tour",p:"Free to browse, membership ~€60/yr for tours",desc:{en:"A searchable, dated program across all Vienna sections (Edelweiss, Austria, Gebirgsverein, Wien) — hundreds of tours per year: day hikes, multi-day Bergwanderwochen, via ferrata, ski touring, MTB and senior-friendly walks, each with a leader name and booking code. Filter by date directly on the portal; membership required to book.",de:"Ein durchsuchbares, datiertes Programm über alle Wiener Sektionen (Edelweiss, Austria, Gebirgsverein, Wien) — hunderte Touren pro Jahr: Tageswanderungen, Bergwanderwochen, Klettersteig, Skitouren, MTB und Seniorenwanderungen, jeweils mit Tourleitung und Buchungscode. Direkt im Portal nach Datum filterbar; Mitgliedschaft zum Buchen nötig."},u:"alpenverein.wien",t:["hiking","alpine","guided","searchable","live"]},
+{id:1012,eu:"https://www.alpenverein-edelweiss.at/",n:"Alpenverein Edelweiss Walfischgasse — Climbing Center",dt:"2026-01-01",de:"2026-12-31",c:"activity",v:"Walfischgasse, 1010 Wien",p:"Day pass or membership",desc:{en:"A bouldering and climbing gym in your own district — Edelweiss's central location, a short walk from home. Part of a network that also includes Südstadt, Marswiese, Klosterneuburg, Pressbaum and Hegelgasse, plus a new hall opening in Floridsdorf.",de:"Boulder- und Kletterhalle im eigenen Bezirk — die zentrale Location von Edelweiss, kurzer Fußweg von zuhause. Teil eines Netzes mit Südstadt, Marswiese, Klosterneuburg, Pressbaum und Hegelgasse, plus einer neuen Halle in Floridsdorf."},u:"alpenverein-edelweiss.at",t:["climbing","bouldering","nearby"]},
+{id:1013,n:"Edelweiss Floridsdorf — New Boulderhalle Opening",dt:"2026-09-01",c:"activity",v:"Floridsdorf",p:"",desc:{en:"A new bouldering hall opens in Vienna's north on 1 September, with an opening program — Edelweiss's newest location.",de:"Am 1. September eröffnet im Norden Wiens eine neue Boulderhalle mit Eröffnungsprogramm — der neueste Standort von Edelweiss."},u:"alpenverein-edelweiss.at",t:["climbing","bouldering","new","opening"]},
 {id:1011,eu:"https://www.naturfreunde.at",n:"Naturfreunde Wien — Tour Program",dt:"2026-01-01",de:"2026-12-31",c:"tour",v:"Meeting points across Vienna",p:"Membership ~€50/yr",desc:{en:"Austria's other big alpine association: weekly guided hikes, bike tours, paddling and winter tours from Vienna, plus courses — a friendly way into a regular outdoor group.",de:"Der zweite große Alpinverband: wöchentliche geführte Wanderungen, Radtouren, Paddeln und Wintertouren ab Wien, dazu Kurse."},u:"naturfreunde.at",t:["hiking","outdoor","guided","group"]},
 
 {id:1000,n:"PREMIERE! The Austrian National Bank Collection — Leopold Museum",dt:"2026-04-24",de:"2026-10-04",c:"exhibition",v:"Leopold Museum, MQ",p:"€19",desc:{en:"The OeNB's art collection shown in full for the first time: Austrian painting and sculpture since 1918, strongest in Neue Sachlichkeit and post-war abstraction.",de:"Die Kunstsammlung der OeNB erstmals vollständig gezeigt: österreichische Malerei und Skulptur seit 1918, Schwerpunkte Neue Sachlichkeit und Nachkriegsabstraktion."},u:"leopoldmuseum.org",t:["collection","neuesachlichkeit"]},
