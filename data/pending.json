@@ -6366,5 +6366,62 @@
   ],
   "_src": "Songkick Vienna (+1 month)",
   "_found": "2026-08-16"
+ },
+ {
+  "n": "The Perfumed Garden",
+  "dt": "2026-09-10",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43372090-perfumed-garden-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-19"
+ },
+ {
+  "n": "Mahmut Orhan 2026",
+  "dt": "2026-10-03",
+  "v": "21:00 · Eventhotel Pyramide",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3801287-mahmut-orhan/id/43372031-mahmut-orhan-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-08-19"
+ },
+ {
+  "n": "Sukhishvili – Das legendäre Nationalballett Georgiens",
+  "dt": "2027-02-03",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51488/Sukhishvili--Das-legendaere-Nationalballett-Georgiens",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-19"
  }
 ]
