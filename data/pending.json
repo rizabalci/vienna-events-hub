@@ -6442,5 +6442,24 @@
   ],
   "_src": "Songkick Vienna (+1 month)",
   "_found": "2026-08-20"
+ },
+ {
+  "n": "Bangerfabrique",
+  "dt": "2026-10-10",
+  "v": "Stadthalle Halle E",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51490/Bangerfabrique",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-21"
  }
 ]
