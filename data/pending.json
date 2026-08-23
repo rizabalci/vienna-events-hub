@@ -6461,5 +6461,43 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-08-21"
+ },
+ {
+  "n": "Komm Ein Bisschen Mit Nach Italien",
+  "dt": "2026-08-23",
+  "v": "Tschauner Bühne",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43103510-komm-ein-bisschen-mit-nach-italien-at-tschauner-buhne",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-23"
+ },
+ {
+  "n": "Komm Ein Bisschen Mit Nach Italien",
+  "dt": "2026-08-24",
+  "v": "Tschauner Bühne",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43103511-komm-ein-bisschen-mit-nach-italien-at-tschauner-buhne",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-08-23"
  }
 ]
