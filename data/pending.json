@@ -6499,5 +6499,24 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-08-23"
+ },
+ {
+  "n": "TRIVIUM & IN FLAMES",
+  "dt": "2027-04-21",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51492/TRIVIUM-amp-IN-FLAMES",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-26"
  }
 ]
