@@ -6518,5 +6518,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-08-26"
+ },
+ {
+  "n": "The First Edition",
+  "dt": "2026-09-04",
+  "v": "23:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43386174-first-edition-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-08-27"
  }
 ]
