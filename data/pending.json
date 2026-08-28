@@ -6537,5 +6537,24 @@
   ],
   "_src": "Songkick Vienna (+1 month)",
   "_found": "2026-08-27"
+ },
+ {
+  "n": "Planet Festival 2026",
+  "dt": "2026-10-03",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/18811-planet/id/43384171-planet-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-08-28"
  }
 ]
