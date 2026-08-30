@@ -6556,5 +6556,24 @@
   ],
   "_src": "Songkick Vienna (+2 months)",
   "_found": "2026-08-28"
+ },
+ {
+  "n": "Comeback Kid",
+  "dt": "2027-01-30",
+  "v": "17:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43389605-comeback-kid-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-08-30"
  }
 ]
