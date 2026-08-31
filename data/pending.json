@@ -6575,5 +6575,24 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-08-30"
+ },
+ {
+  "n": "Der Nussknacker - UCB",
+  "dt": "2026-12-08",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51285/Der-Nussknacker-UCB",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-08-31"
  }
 ]
