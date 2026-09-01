@@ -6594,5 +6594,937 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-08-31"
+ },
+ {
+  "n": "Der Gestiefelte Kater",
+  "dt": "2026-11-01",
+  "v": "11:30 · Peterskirche",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43366199-der-gestiefelte-kater-at-peterskirche",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Enkay",
+  "dt": "2026-11-01",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42514672-enkay-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Liedfett",
+  "dt": "2026-11-01",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43006344-liedfett-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Rock in Peace",
+  "dt": "2026-11-01",
+  "v": "19:00 · Orpheum Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43242863-rock-in-peace-at-orpheum-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Soft Loft",
+  "dt": "2026-11-01",
+  "v": "20:00 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43223987-soft-loft-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "The Bulgarian Voices \"angelite\"",
+  "dt": "2026-11-01",
+  "v": "Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43372704-bulgarian-voices-angelite-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Wolves In the Throne Room",
+  "dt": "2026-11-01",
+  "v": "20:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43189345-wolves-in-the-throne-room-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "YuniCon 2026",
+  "dt": "2026-11-01",
+  "v": "Multiversum",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3799311-yunicon/id/43354550-yunicon-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Codefendants and Jakobs Castle",
+  "dt": "2026-11-02",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43177193-codefendants-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Kat Eaton",
+  "dt": "2026-11-02",
+  "v": "Porgy & Bess Jazz & Music Club",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43204597-kat-eaton-at-porgy-and-bess-jazz-and-music-club",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Max Mutzke",
+  "dt": "2026-11-02",
+  "v": "20:00 · Globe Wien - Marx Halle - Studio 2",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42849213-max-mutzke-at-globe-wien-marx-halle-studio-2",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Melanie Baker",
+  "dt": "2026-11-02",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43245636-melanie-baker-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Rock in Peace",
+  "dt": "2026-11-02",
+  "v": "19:30 · Orpheum Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43242864-rock-in-peace-at-orpheum-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Tony & The Kiki",
+  "dt": "2026-11-02",
+  "v": "20:00 · Grelle Forelle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43290060-tony-and-the-kiki-at-grelle-forelle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Amon Amarth",
+  "dt": "2026-11-03",
+  "v": "18:30 · Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42906151-amon-amarth-at-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Deloraine",
+  "dt": "2026-11-03",
+  "v": "20:00 · Viper Room",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43140146-deloraine-at-viper-room",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Nasty",
+  "dt": "2026-11-03",
+  "v": "19:30 · Weberknecht",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43252449-nasty-at-weberknecht",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Prague Cello Quartet",
+  "dt": "2026-11-03",
+  "v": "20:00 · Lorely-Saal",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43346127-prague-cello-quartet-at-lorelysaal",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Ronis goliath",
+  "dt": "2026-11-03",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43379067-ronis-goliath-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Biita Houdei",
+  "dt": "2026-11-04",
+  "v": "Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43223188-biita-houdei-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Bonaparte",
+  "dt": "2026-11-04",
+  "v": "20:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42782597-bonaparte-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Call Me Karizma",
+  "dt": "2026-11-04",
+  "v": "U4 Vienna",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43391407-call-me-karizma-at-u4-vienna",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "GUACAYO",
+  "dt": "2026-11-04",
+  "v": "19:00 · Rhiz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43226048-guacayo-at-rhiz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Hans Söllner",
+  "dt": "2026-11-04",
+  "v": "20:00 · Haus der Musik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43156878-hans-sollner-at-haus-der-musik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Julia Meladin",
+  "dt": "2026-11-04",
+  "v": "19:30 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43153587-julia-meladin-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Julia Meladin",
+  "dt": "2026-11-04",
+  "v": "17:15 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43389532-julia-meladin-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Soffie",
+  "dt": "2026-11-04",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42865799-soffie-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Gitte Haenning",
+  "dt": "2026-11-05",
+  "v": "Theater Akzent",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43006197-gitte-haenning-at-theater-akzent",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Kuult",
+  "dt": "2026-11-05",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43182539-kuult-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Milano",
+  "dt": "2026-11-05",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42461415-milano-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Miss Allie",
+  "dt": "2026-11-05",
+  "v": "19:30 · Globe Wien - Marx Halle - Studio 2",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42474390-miss-allie-at-globe-wien-marx-halle-studio-2",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Moses Yoofee Trio",
+  "dt": "2026-11-05",
+  "v": "20:00 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43387897-moses-yoofee-trio-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Peter Cornelius",
+  "dt": "2026-11-05",
+  "v": "20:00 · Halle F, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43071716-peter-cornelius-at-halle-f-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick",
+   "series"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Poxrucker Sisters",
+  "dt": "2026-11-05",
+  "v": "20:00 · Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42911035-poxrucker-sisters-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Razorlight",
+  "dt": "2026-11-05",
+  "v": "20:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43271099-razorlight-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "UCHE YARA",
+  "dt": "2026-11-05",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43280428-uche-yara-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Afrob",
+  "dt": "2026-11-06",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43105715-afrob-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "André Rieu",
+  "dt": "2026-11-06",
+  "v": "19:30 · Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42894894-andre-rieu-at-halle-d-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Boris Bukowski",
+  "dt": "2026-11-06",
+  "v": "20:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42989163-boris-bukowski-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Eli Preiss",
+  "dt": "2026-11-06",
+  "v": "Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43094848-eli-preiss-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "In Extremo",
+  "dt": "2026-11-06",
+  "v": "20:00 · Globe Wien - Marx Halle - Studio 2",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43110662-in-extremo-at-globe-wien-marx-halle-studio-2",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Krashkarma",
+  "dt": "2026-11-06",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43011473-krashkarma-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "laela",
+  "dt": "2026-11-06",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43278042-laela-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Lost in Lona",
+  "dt": "2026-11-06",
+  "v": "20:00 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43014399-lost-in-lona-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "MEAT CHEESE and Boon",
+  "dt": "2026-11-06",
+  "v": "18:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43180659-meat-cheese-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Peter Schneider Guitar and Sir Oliver Mally",
+  "dt": "2026-11-06",
+  "v": "Sarg Fabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43181535-peter-schneider-guitar-at-sarg-fabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Shaki Tavi",
+  "dt": "2026-11-06",
+  "v": "20:00 · das LOT",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43363209-shaki-tavi-at-das-lot",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Wiener Wahnsinn",
+  "dt": "2026-11-06",
+  "v": "19:30 · Orpheum Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43242973-wiener-wahnsinn-at-orpheum-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-01"
+ },
+ {
+  "n": "Montez",
+  "dt": "2027-10-02",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51494/Montez",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-01"
  }
 ]
