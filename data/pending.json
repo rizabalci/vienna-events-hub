@@ -7526,5 +7526,43 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-01"
+ },
+ {
+  "n": "ALMA",
+  "dt": "2026-10-04",
+  "v": "19:30 · Mozart-Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43392468-alma-at-mozartsaal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-09-02"
+ },
+ {
+  "n": "SOMBR // You Are The Reason Tour // VIENNA",
+  "dt": "2027-05-29",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51498/SOMBR-You-Are-The-Reason-Tour-VIENNA",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-02"
  }
 ]
