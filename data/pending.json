@@ -7564,5 +7564,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-02"
+ },
+ {
+  "n": "Conni - Das Musical",
+  "dt": "2027-10-03",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51496/Conni-Das-Musical",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-03"
  }
 ]
