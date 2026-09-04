@@ -7583,5 +7583,100 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-03"
+ },
+ {
+  "n": "Breakout",
+  "dt": "2026-09-11",
+  "v": "20:00 · Weberknecht",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43366195-breakout-at-weberknecht",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-04"
+ },
+ {
+  "n": "Matthew Ryals",
+  "dt": "2026-09-11",
+  "v": "kv.r",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43367074-matthew-ryals-at-kvr",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-04"
+ },
+ {
+  "n": "Mojo Blues Band",
+  "dt": "2026-09-11",
+  "v": "20:00 · Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43105688-mojo-blues-band-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-04"
+ },
+ {
+  "n": "NHOAH",
+  "dt": "2026-10-03",
+  "v": "Wild im West",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43394783-nhoah-at-wild-im-west",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-09-04"
+ },
+ {
+  "n": "James Blunt",
+  "dt": "2027-03-07",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51502/James-Blunt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-04"
  }
 ]
