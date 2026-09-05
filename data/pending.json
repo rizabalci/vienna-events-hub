@@ -7678,5 +7678,328 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-04"
+ },
+ {
+  "n": "Planet Festival 2026",
+  "dt": "2026-09-11",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/18811-planet/id/43384168-planet-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Planet Festival Tour 2026 | Szene Wien 2026",
+  "dt": "2026-09-11",
+  "v": "Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3802640-planet-tour-2026-szene-wien/id/43386255-planet-festival-tour-2026--szene-wien-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "5/8erl in Ehr'n",
+  "dt": "2026-09-12",
+  "v": "18:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42541536-58erl-in-ehrn-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Ardenite",
+  "dt": "2026-09-12",
+  "v": "20:00 · Replugged",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43067666-ardenite-at-replugged",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Die Toten Hosen",
+  "dt": "2026-09-12",
+  "v": "17:30 · Ernst Happel Stadion",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42594188-die-toten-hosen-at-ernst-happel-stadion",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Hypnotize",
+  "dt": "2026-09-12",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43335965-hypnotize-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Mary Broadcast",
+  "dt": "2026-09-12",
+  "v": "16:30 · Literaturmeile",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43364530-mary-broadcast-at-literaturmeile",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Peter Schneider Guitar and Sir Oliver Mally",
+  "dt": "2026-09-12",
+  "v": "Tunnel",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43376308-peter-schneider-guitar-at-tunnel",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Sofie Royer",
+  "dt": "2026-09-12",
+  "v": "20:00 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43266258-sofie-royer-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "The Wall",
+  "dt": "2026-09-12",
+  "v": "Steinbruch St. Margarethen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42983800-wall-at-steinbruch-st-margarethen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Wolfgang Ambros",
+  "dt": "2026-09-12",
+  "v": "19:30 · Theater Im Park",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42912119-wolfgang-ambros-at-theater-im-park",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Yasmin Levy",
+  "dt": "2026-09-12",
+  "v": "20:00 · Mozart-Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43015611-yasmin-levy-at-mozartsaal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "EUROTEURO",
+  "dt": "2026-09-13",
+  "v": "WUK",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43347953-euroteuro-at-wuk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Fie Schouten and Frank Gratkowski",
+  "dt": "2026-09-13",
+  "v": "19:00 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43369314-fie-schouten-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Jackie Bristow",
+  "dt": "2026-09-13",
+  "v": "19:00 · Acht Millimeter Kino Mank",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43294358-jackie-bristow-at-acht-millimeter-kino-mank",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "Wolfgang Ambros",
+  "dt": "2026-09-13",
+  "v": "19:30 · Theater Im Park",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43046572-wolfgang-ambros-at-theater-im-park",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-05"
+ },
+ {
+  "n": "The Erlkings, Ivan Turkalj, Bryan Benner, Thomas Toppler, and Simon Teurezbacher",
+  "dt": "2027-01-14",
+  "v": "20:30 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43398511-erlkings-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-05"
  }
 ]
