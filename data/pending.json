@@ -8305,5 +8305,81 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-09-07"
+ },
+ {
+  "n": "Melanie Dekker",
+  "dt": "2026-09-16",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43328768-melanie-dekker-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-08"
+ },
+ {
+  "n": "Premiere",
+  "dt": "2026-09-16",
+  "v": "19:00 · Theater an Der Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43221149-premiere-at-theater-an-der-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-08"
+ },
+ {
+  "n": "Agnès Milewski",
+  "dt": "2026-11-06",
+  "v": "Loop",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43401513-agnes-milewski-at-loop",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-08"
+ },
+ {
+  "n": "D-Block Europe",
+  "dt": "2026-11-06",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43391448-dblock-europe-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-08"
  }
 ]
