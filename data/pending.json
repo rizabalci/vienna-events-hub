@@ -8381,5 +8381,81 @@
   ],
   "_src": "Songkick Vienna (+2 months)",
   "_found": "2026-09-08"
+ },
+ {
+  "n": "Orchester 1756",
+  "dt": "2026-09-09",
+  "v": "Karlskirche",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43403588-orchester-1756-at-karlskirche",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-09"
+ },
+ {
+  "n": "Voces8",
+  "dt": "2026-09-16",
+  "v": "Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43369325-voces8-at-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-09"
+ },
+ {
+  "n": "Purple Roadhouse, Carpet Island, and van Joost",
+  "dt": "2026-10-03",
+  "v": "20:00 · G5 Live Music Bar",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43401505-purple-roadhouse-at-g5-live-music-bar",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-09-09"
+ },
+ {
+  "n": "Marlin Beach",
+  "dt": "2026-11-05",
+  "v": "20:30 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43403623-marlin-beach-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-09"
  }
 ]
