@@ -8457,5 +8457,138 @@
   ],
   "_src": "Songkick Vienna (+2 months)",
   "_found": "2026-09-09"
+ },
+ {
+  "n": "LARC",
+  "dt": "2026-09-16",
+  "v": "Kulturcafé Henriette",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43401509-larc-at-kulturcafe-henriette",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-10"
+ },
+ {
+  "n": "Black Stone Cherry",
+  "dt": "2026-09-17",
+  "v": "20:00 · Simm City",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42906050-black-stone-cherry-at-simm-city",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-10"
+ },
+ {
+  "n": "Jazz Sabbath",
+  "dt": "2026-09-17",
+  "v": "Porgy & Bess Jazz & Music Club",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42843465-jazz-sabbath-at-porgy-and-bess-jazz-and-music-club",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-10"
+ },
+ {
+  "n": "Tautumeitas",
+  "dt": "2026-09-17",
+  "v": "Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43308427-tautumeitas-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-10"
+ },
+ {
+  "n": "Fur Elise",
+  "dt": "2027-01-17",
+  "v": "17:00 · Peterskirche",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43405869-fur-elise-at-peterskirche",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-10"
+ },
+ {
+  "n": "Yael Naïm",
+  "dt": "2027-01-20",
+  "v": "20:00 · Reaktor",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43407774-yael-naim-at-reaktor",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-10"
+ },
+ {
+  "n": "Fur Elise",
+  "dt": "2027-01-23",
+  "v": "17:00 · Peterskirche",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43405870-fur-elise-at-peterskirche",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-10"
  }
 ]
