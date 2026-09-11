@@ -8590,5 +8590,119 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-09-10"
+ },
+ {
+  "n": "Harri Stojka",
+  "dt": "2026-09-17",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42657420-harri-stojka-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-11"
+ },
+ {
+  "n": "Maria Mazzotta",
+  "dt": "2026-09-17",
+  "v": "19:30 · Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287549-maria-mazzotta-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-11"
+ },
+ {
+  "n": "The Dublin Legends",
+  "dt": "2026-09-17",
+  "v": "20:00 · Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43061051-dublin-legends-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-11"
+ },
+ {
+  "n": "The Sonic Brewery",
+  "dt": "2026-09-17",
+  "v": "Wombat's City Hostel",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43356277-sonic-brewery-at-wombats-city-hostel",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-11"
+ },
+ {
+  "n": "Willy Astor",
+  "dt": "2026-09-17",
+  "v": "19:30 · Stadtsaal",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42903997-willy-astor-at-stadtsaal",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-11"
+ },
+ {
+  "n": "PHIL - The Genesis & Phil Collins Tribute Show",
+  "dt": "2027-11-07",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51504/PHIL-The-Genesis-amp-Phil-Collins-Tribute-Show",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-11"
  }
 ]
