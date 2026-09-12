@@ -8704,5 +8704,138 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-11"
+ },
+ {
+  "n": "Luke Andrews",
+  "dt": "2026-09-17",
+  "v": "19:30 · Stadttheater Wiener Neustadt",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43153598-luke-andrews-at-stadttheater-wiener-neustadt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
+ },
+ {
+  "n": "Oswald",
+  "dt": "2026-09-17",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43153695-oswald-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
+ },
+ {
+  "n": "Chris Avantgarde",
+  "dt": "2026-09-18",
+  "v": "O der Klub",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43346298-chris-avantgarde-at-o-der-klub",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
+ },
+ {
+  "n": "Christina Stürmer",
+  "dt": "2026-09-18",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42729522-christina-sturmer-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
+ },
+ {
+  "n": "h3nce",
+  "dt": "2026-09-18",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43086179-h3nce-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
+ },
+ {
+  "n": "Mike Oldfield",
+  "dt": "2026-09-18",
+  "v": "20:00 · Halle F, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42807536-mike-oldfield-at-halle-f-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
+ },
+ {
+  "n": "The Dublin Legends",
+  "dt": "2026-09-18",
+  "v": "20:00 · Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43061052-dublin-legends-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-12"
  }
 ]
