@@ -8837,5 +8837,214 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-09-12"
+ },
+ {
+  "n": "Jeremia",
+  "dt": "2026-09-18",
+  "v": "18:00 · Vienna-austria",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43351662-jeremia-at-viennaaustria",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Karl Bierbaumer",
+  "dt": "2026-09-18",
+  "v": "18:30 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43370459-karl-bierbaumer-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Planet Festival 2026",
+  "dt": "2026-09-18",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/18811-planet/id/43384169-planet-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Uusikuu",
+  "dt": "2026-09-18",
+  "v": "19:00 · Kulturverein das Hufnagl",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42789630-uusikuu-at-kulturverein-das-hufnagl",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "zerosum",
+  "dt": "2026-09-18",
+  "v": "23:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43367720-zerosum-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Descartes A Kant",
+  "dt": "2026-09-19",
+  "v": "19:00 · LUCIA",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43372302-descartes-a-kant-at-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Hansi Hinterseer",
+  "dt": "2026-09-19",
+  "v": "20:00 · Portofino",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42978337-hansi-hinterseer-at-portofino",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Kasra, Calyx, QZB, and Sequent",
+  "dt": "2026-09-19",
+  "v": "23:00 · Grelle Forelle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43362129-kasra-at-grelle-forelle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "NINA ROSA",
+  "dt": "2026-09-19",
+  "v": "20:00 · Frau Mayer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43359536-nina-rosa-at-frau-mayer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Canadian Brass",
+  "dt": "2027-01-26",
+  "v": "19:30 · Großer Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43409973-canadian-brass-at-grosser-saal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-13"
+ },
+ {
+  "n": "Büşra Kayıkçı",
+  "dt": "2027-01-28",
+  "v": "19:30 · Berio Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43410331-busra-kayikci-at-berio-saal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-13"
  }
 ]
