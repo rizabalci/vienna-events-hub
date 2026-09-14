@@ -9046,5 +9046,214 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-09-13"
+ },
+ {
+  "n": "Carl Sentance",
+  "dt": "2026-09-19",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43382275-carl-sentance-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Plum Festival 2026",
+  "dt": "2026-09-19",
+  "v": "Kollektiv Kaorle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/701989-plum/id/43402827-plum-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Top Toy and Mandy Mozart",
+  "dt": "2026-09-19",
+  "v": "23:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43399244-top-toy-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Wien",
+  "dt": "2026-09-19",
+  "v": "19:00 · O der Klub",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43108539-wien-at-o-der-klub",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Giorgio Conte",
+  "dt": "2026-09-20",
+  "v": "18:30 · Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287064-giorgio-conte-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Jony",
+  "dt": "2026-09-21",
+  "v": "19:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43280429-jony-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Mad Tsai",
+  "dt": "2026-09-21",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43290061-mad-tsai-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "The Nocturnal Affair",
+  "dt": "2026-09-21",
+  "v": "19:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43119455-nocturnal-affair-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Radwan Ghazi Moumneh & Frédéric D. Oberland, Jessica Moss, Radwan Ghazi Moumneh, and Frédéric D. Oberland",
+  "dt": "2026-11-03",
+  "v": "Rhiz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43412853-radwan-ghazi-moumneh-and-frederic-d-oberland-at-rhiz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Cirque Du Soleil OVO",
+  "dt": "2027-05-02",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51506/Cirque-Du-Soleil-OVO",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-14"
+ },
+ {
+  "n": "Nena",
+  "dt": "2027-11-07",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51508/Nena",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-14"
  }
 ]
