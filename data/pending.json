@@ -9255,5 +9255,119 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-14"
+ },
+ {
+  "n": "Favorite Fall 2026",
+  "dt": "2026-09-21",
+  "v": "das LOT",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/3794553-favorite-fall/id/43307481-favorite-fall-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-15"
+ },
+ {
+  "n": "Kemo The Blaxican",
+  "dt": "2026-09-21",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43241329-kemo-the-blaxican-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-15"
+ },
+ {
+  "n": "Yvonne Moriel and yvonne moriel :: sweetlife",
+  "dt": "2026-09-21",
+  "v": "Club Praterstrasse",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43170615-yvonne-moriel-at-club-praterstrasse",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-15"
+ },
+ {
+  "n": "Fatoni",
+  "dt": "2026-09-22",
+  "v": "20:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42719801-fatoni-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-15"
+ },
+ {
+  "n": "Tenside",
+  "dt": "2026-09-22",
+  "v": "20:00 · Viper Room",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43267157-tenside-at-viper-room",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-15"
+ },
+ {
+  "n": "Sido",
+  "dt": "2027-10-03",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51512/Sido",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-15"
  }
 ]
