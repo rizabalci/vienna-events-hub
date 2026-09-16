@@ -9369,5 +9369,195 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-15"
+ },
+ {
+  "n": "Melanie Dekker",
+  "dt": "2026-09-17",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43415697-melanie-dekker-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "Ak'Chamel",
+  "dt": "2026-09-23",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43395398-akchamel-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "CA7RIEL & Paco Amoroso",
+  "dt": "2026-09-23",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43119075-ca7riel-and-paco-amoroso-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "CloudyaH, Amelie Tobien, and Jess Blijkers",
+  "dt": "2026-09-23",
+  "v": "19:00 · Loop - Stadtbahnbögen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43366626-cloudyah-at-loop-stadtbahnbogen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "Frigg",
+  "dt": "2026-09-23",
+  "v": "Theater am Spittelberg",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43081261-frigg-at-theater-am-spittelberg",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "Srdjan Ivanovic Blazin' Quartet",
+  "dt": "2026-09-23",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43327397-srdjan-ivanovic-blazin-quartet-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "Ajla, Janka, and Max Nagl",
+  "dt": "2026-10-03",
+  "v": "15:00 · LUCIA",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43415860-ajla-at-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "VIRSKY – Das Märchen von den 12 Monaten",
+  "dt": "2027-01-05",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51516/VIRSKY--Das-Maerchen-von-den-12-Monaten",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "Jesus Christ Superstar",
+  "dt": "2027-03-29",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51510/Jesus-Christ-Superstar",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-16"
+ },
+ {
+  "n": "William Shakespeare’s Romeo + Juliet Film in Concert",
+  "dt": "2027-11-04",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51514/William-Shakespeares-Romeo--Juliet-Film-in-Concert",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-16"
  }
 ]
