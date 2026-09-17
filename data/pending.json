@@ -9559,5 +9559,119 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-16"
+ },
+ {
+  "n": "atomic fruit and Vylla",
+  "dt": "2026-09-24",
+  "v": "Kramladen",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43307510-atomic-fruit-at-kramladen",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-17"
+ },
+ {
+  "n": "Average",
+  "dt": "2026-09-24",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43126374-average-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-17"
+ },
+ {
+  "n": "EUROTEURO",
+  "dt": "2026-09-24",
+  "v": "Arena",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43347954-euroteuro-at-arena",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-17"
+ },
+ {
+  "n": "Voodoo Jürgens",
+  "dt": "2026-09-24",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42972690-voodoo-jurgens-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-17"
+ },
+ {
+  "n": "Oskar Haag",
+  "dt": "2026-09-25",
+  "v": "20:00 · ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43097824-oskar-haag-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-17"
+ },
+ {
+  "n": "Ich war noch niemals in New York",
+  "dt": "2028-06-18",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51518/Ich-war-noch-niemals-in-New-York",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-17"
  }
 ]
