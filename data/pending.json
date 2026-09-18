@@ -9673,5 +9673,176 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-17"
+ },
+ {
+  "n": "Manu Vera Tudela",
+  "dt": "2026-09-24",
+  "v": "19:30 · Casa Mestiza",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43420262-manu-vera-tudela-at-casa-mestiza",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "AnJosef",
+  "dt": "2026-09-25",
+  "v": "19:00 · Zentral Kino Wiener Neustadt",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42978574-anjosef-at-zentral-kino-wiener-neustadt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "ANTONYM",
+  "dt": "2026-09-25",
+  "v": "23:00 · dasWERK",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43403624-antonym-at-daswerk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "Gaudion",
+  "dt": "2026-09-25",
+  "v": "19:00 · Haus der Musik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43220318-gaudion-at-haus-der-musik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "J-MO",
+  "dt": "2026-09-25",
+  "v": "ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43341699-jmo-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "Mountain Crew",
+  "dt": "2026-09-25",
+  "v": "Kaiserwiese Vorm Riesenrad",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43176931-mountain-crew-at-kaiserwiese-vorm-riesenrad",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "Native",
+  "dt": "2026-09-25",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43397034-native-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "Steve Bates",
+  "dt": "2026-09-25",
+  "v": "20:00 · kv.r",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43395922-steve-bates-at-kvr",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-18"
+ },
+ {
+  "n": "Dota Kehr",
+  "dt": "2027-01-12",
+  "v": "Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43416063-dota-kehr-at-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-18"
  }
 ]
