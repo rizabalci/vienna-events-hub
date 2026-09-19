@@ -9844,5 +9844,196 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-09-18"
+ },
+ {
+  "n": "Planet Festival 2026",
+  "dt": "2026-09-25",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/18811-planet/id/43384170-planet-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Tony Christie",
+  "dt": "2026-09-25",
+  "v": "Portofino",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42986710-tony-christie-at-portofino",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Der Gestiefelte Kater",
+  "dt": "2026-09-26",
+  "v": "11:30 · Peterskirche",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43366197-der-gestiefelte-kater-at-peterskirche",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick",
+   "series"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Ian Fisher and Hayden Arp",
+  "dt": "2026-09-26",
+  "v": "19:30 · The Loft, Lerchenfeldergürtel, Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43202583-ian-fisher-at-loft-lerchenfeldergurtel-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Lavo",
+  "dt": "2026-09-26",
+  "v": "12:00 · Pratersauna",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43387607-lavo-at-pratersauna",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Leaf Dog",
+  "dt": "2026-09-26",
+  "v": "19:30 · Club Weberknecht",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43347589-leaf-dog-at-club-weberknecht",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Shadow of Intent",
+  "dt": "2026-09-26",
+  "v": "19:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43105793-shadow-of-intent-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "ShitKid",
+  "dt": "2026-09-26",
+  "v": "20:00 · dasWERK",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43256967-shitkid-at-daswerk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Vtoroi Ka",
+  "dt": "2026-09-26",
+  "v": "20:00 · U4",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43341940-vtoroi-ka-at-u4",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
+ },
+ {
+  "n": "Yasmo & die Klangkantine",
+  "dt": "2026-09-26",
+  "v": "19:00 · Zentral Kino Wiener Neustadt",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42978575-yasmo-and-die-klangkantine-at-zentral-kino-wiener-neustadt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-19"
  }
 ]
