@@ -10282,5 +10282,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-21"
+ },
+ {
+  "n": "Jude York",
+  "dt": "2026-09-29",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287570-jude-york-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-09-22"
  }
 ]
