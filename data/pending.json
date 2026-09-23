@@ -10301,5 +10301,119 @@
   ],
   "_src": "Songkick Vienna (2026)",
   "_found": "2026-09-22"
+ },
+ {
+  "n": "George Dalaras",
+  "dt": "2026-09-30",
+  "v": "19:30 · Großer Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43398720-george-dalaras-at-grosser-saal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-23"
+ },
+ {
+  "n": "Grenzkontrolle",
+  "dt": "2026-09-30",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43196372-grenzkontrolle-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-23"
+ },
+ {
+  "n": "Hannes Ringlstetter",
+  "dt": "2026-09-30",
+  "v": "19:30 · Stadtsaal",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42786525-hannes-ringlstetter-at-stadtsaal",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-23"
+ },
+ {
+  "n": "The Lemon Twigs",
+  "dt": "2026-09-30",
+  "v": "19:30 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43162996-lemon-twigs-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-23"
+ },
+ {
+  "n": "Tom Gregory",
+  "dt": "2026-09-30",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42887533-tom-gregory-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-23"
+ },
+ {
+  "n": "Suzi Quatro",
+  "dt": "2027-05-15",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51522/Suzi-Quatro",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-23"
  }
 ]
