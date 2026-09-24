@@ -10415,5 +10415,138 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-23"
+ },
+ {
+  "n": "Lucis",
+  "dt": "2026-09-30",
+  "v": "18:00 · Bank Austria Salon im Alten Rathaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43346125-lucis-at-bank-austria-salon-im-alten-rathaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-24"
+ },
+ {
+  "n": "Mountain Crew",
+  "dt": "2026-09-30",
+  "v": "Kaiserwiese Vorm Riesenrad",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43176932-mountain-crew-at-kaiserwiese-vorm-riesenrad",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-24"
+ },
+ {
+  "n": "Ursula Strauss",
+  "dt": "2026-09-30",
+  "v": "19:30 · Mozart-Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43392477-ursula-strauss-at-mozartsaal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-09-24"
+ },
+ {
+  "n": "Lakis",
+  "dt": "2027-01-22",
+  "v": "20:00 · Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43427186-lakis-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-24"
+ },
+ {
+  "n": "Bullet For My Valentine",
+  "dt": "2027-02-13",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51528/Bullet-For-My-Valentine",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-24"
+ },
+ {
+  "n": "Rocket Man",
+  "dt": "2027-06-10",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51526/Rocket-Man",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-24"
+ },
+ {
+  "n": "The Music of Queen - Live 2027",
+  "dt": "2027-11-21",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51524/The-Music-of-Queen-Live-2027",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-24"
  }
 ]
