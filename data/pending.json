@@ -10548,5 +10548,62 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-24"
+ },
+ {
+  "n": "Louis Philippson",
+  "dt": "2027-10-10",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51535/Louis-Philippson",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-25"
+ },
+ {
+  "n": "Gert Steinbäcker & Band",
+  "dt": "2027-12-10",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51532/Gert-Steinbaecker-amp-Band",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-25"
+ },
+ {
+  "n": "Der kleine Prinz",
+  "dt": "2028-02-10",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51530/Der-kleine-Prinz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-25"
  }
 ]
