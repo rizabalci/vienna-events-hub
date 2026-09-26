@@ -10605,5 +10605,62 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-25"
+ },
+ {
+  "n": "Fight From Within",
+  "dt": "2027-01-14",
+  "v": "19:30 · Weberknecht",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43431324-fight-from-within-at-weberknecht",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-26"
+ },
+ {
+  "n": "Kyle Alessandro",
+  "dt": "2027-01-16",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43433550-kyle-alessandro-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-26"
+ },
+ {
+  "n": "Kiss Forever Band",
+  "dt": "2027-01-21",
+  "v": "Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43432841-kiss-forever-band-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-09-26"
  }
 ]
