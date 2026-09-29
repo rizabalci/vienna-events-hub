@@ -10662,5 +10662,24 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-09-26"
+ },
+ {
+  "n": "Herzog & Polster",
+  "dt": "2026-11-19",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51536/Herzog-amp-Polster",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-09-29"
  }
 ]
