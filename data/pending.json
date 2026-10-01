@@ -10681,5 +10681,62 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-09-29"
+ },
+ {
+  "n": "Boris",
+  "dt": "2026-10-07",
+  "v": "19:00 · Arena Wein- Verein Forum",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43242344-boris-at-arena-wein-verein-forum",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-01"
+ },
+ {
+  "n": "Cari Cari",
+  "dt": "2026-10-07",
+  "v": "21:00 · Großer Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43392520-cari-cari-at-grosser-saal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-01"
+ },
+ {
+  "n": "Loma Prieta",
+  "dt": "2026-10-07",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43323453-loma-prieta-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-01"
  }
 ]
