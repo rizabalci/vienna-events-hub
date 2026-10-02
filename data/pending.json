@@ -10738,5 +10738,24 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-10-01"
+ },
+ {
+  "n": "Gospel Christmas",
+  "dt": "2026-12-09",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51539/Gospel-Christmas",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-02"
  }
 ]
