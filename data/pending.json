@@ -11935,5 +11935,328 @@
   ],
   "_src": "Songkick Vienna (+2 months)",
   "_found": "2026-10-03"
+ },
+ {
+  "n": "Leah",
+  "dt": "2026-10-09",
+  "v": "23:00 · dasWERK",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43415709-leah-at-daswerk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Metternich",
+  "dt": "2026-10-09",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43124073-metternich-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Nedim Jahic",
+  "dt": "2026-10-09",
+  "v": "Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43437190-nedim-jahic-at-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Stockdale",
+  "dt": "2026-10-09",
+  "v": "19:30 · LUCIA",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43421796-stockdale-at-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "AUT of ORDA",
+  "dt": "2026-10-10",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42908941-aut-of-orda-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Bernhard Eder and [wa:rum]",
+  "dt": "2026-10-10",
+  "v": "18:00 · Konzertcafe Schmid Hansl",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43442803-bernhard-eder-at-konzertcafe-schmid-hansl",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "CIVO",
+  "dt": "2026-10-10",
+  "v": "20:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42581656-civo-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Dagobert",
+  "dt": "2026-10-10",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43050948-dagobert-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Die Hinichen",
+  "dt": "2026-10-10",
+  "v": "Schutzhaus zur Zukunft",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43099466-die-hinichen-at-schutzhaus-zur-zukunft",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Katherine Priddy",
+  "dt": "2026-10-10",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43025065-katherine-priddy-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Pietro Basile",
+  "dt": "2026-10-10",
+  "v": "20:00 · Portofino",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42879416-pietro-basile-at-portofino",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "scott hepple and the sun band",
+  "dt": "2026-10-10",
+  "v": "20:00 · Proberaum Scheibbs",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43442904-scott-hepple-and-the-sun-band-at-proberaum-scheibbs",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Wallis Bird",
+  "dt": "2026-10-10",
+  "v": "19:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43040646-wallis-bird-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Allie X",
+  "dt": "2026-10-11",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43157396-allie-x-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Modeselektor",
+  "dt": "2026-10-11",
+  "v": "20:00 · Grelle Forelle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43289875-modeselektor-at-grelle-forelle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Holli",
+  "dt": "2026-11-03",
+  "v": "19:30 · Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43447709-holli-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-10-05"
+ },
+ {
+  "n": "Kontra K",
+  "dt": "2027-11-15",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51540/Kontra-K",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-05"
  }
 ]
