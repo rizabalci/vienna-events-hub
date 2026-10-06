@@ -12258,5 +12258,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-05"
+ },
+ {
+  "n": "Provinz",
+  "dt": "2027-11-20",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51542/Provinz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-06"
  }
 ]
