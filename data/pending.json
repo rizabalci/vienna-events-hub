@@ -12790,5 +12790,157 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-08"
+ },
+ {
+  "n": "Albinobrothers",
+  "dt": "2026-10-14",
+  "v": "Club Rhiz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43301369-albinobrothers-at-club-rhiz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "Danko Jones",
+  "dt": "2026-10-14",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43067418-danko-jones-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "Dead Bob",
+  "dt": "2026-10-14",
+  "v": "20:30 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43194597-dead-bob-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "God Mother and Obstruktion",
+  "dt": "2026-10-14",
+  "v": "Venster 99",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43372977-god-mother-at-venster-99",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "Jassin",
+  "dt": "2026-10-14",
+  "v": "20:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42944825-jassin-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "Tkandz",
+  "dt": "2026-10-14",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43229231-tkandz-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "Voices of Women",
+  "dt": "2026-10-14",
+  "v": "19:30 · Metropoldi",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43310027-voices-of-women-at-metropoldi",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
+ },
+ {
+  "n": "Wiener Tschuschenkapelle",
+  "dt": "2026-10-14",
+  "v": "Globe Wien - Marx Halle - Studio 2",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43127906-wiener-tschuschenkapelle-at-globe-wien-marx-halle-studio-2",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-09"
  }
 ]
