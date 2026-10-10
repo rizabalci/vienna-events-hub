@@ -12942,5 +12942,195 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-10-09"
+ },
+ {
+  "n": "Krawall",
+  "dt": "2026-10-14",
+  "v": "20:00 · Hrvatski Centar | Kroatisches Zentrum",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43415720-krawall-at-hrvatski-centar-kroatisches-zentrum",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Die Verlierer",
+  "dt": "2026-10-15",
+  "v": "19:30 · Fluc",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43072750-die-verlierer-at-fluc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Dreiviertelblut",
+  "dt": "2026-10-15",
+  "v": "Stadtsaal",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42944287-dreiviertelblut-at-stadtsaal",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "girli",
+  "dt": "2026-10-15",
+  "v": "20:00 · Café, Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43187949-girli-at-cafe-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Jahn Kemper",
+  "dt": "2026-10-15",
+  "v": "20:00 · Rhiz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43223890-jahn-kemper-at-rhiz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Saedi",
+  "dt": "2026-10-15",
+  "v": "20:00 · ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43341938-saedi-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Sean Koch",
+  "dt": "2026-10-15",
+  "v": "19:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43086533-sean-koch-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Stefan Jurgens",
+  "dt": "2026-10-15",
+  "v": "19:30 · Theater Akzent",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43135299-stefan-jurgens-at-theater-akzent",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Vanesa Harbek",
+  "dt": "2026-10-15",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43397037-vanesa-harbek-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
+ },
+ {
+  "n": "Zeronic",
+  "dt": "2026-10-15",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43271587-zeronic-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-10-10"
  }
 ]
