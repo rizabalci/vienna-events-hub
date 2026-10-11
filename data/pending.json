@@ -13132,5 +13132,24 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-10-10"
+ },
+ {
+  "n": "Roy Biano & Die Abbrunzati Boys",
+  "dt": "2027-09-30",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51548/Roy-Biano-amp-Die-Abbrunzati-Boys",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-11"
  }
 ]
