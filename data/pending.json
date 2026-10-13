@@ -13436,5 +13436,214 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-12"
+ },
+ {
+  "n": "Gewürztraminer",
+  "dt": "2026-10-17",
+  "v": "20:00 · Werkstätten- & Kulturhaus (WUK)",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42750390-gewurztraminer-at-werkstatten-and-kulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "H.p. Zinker",
+  "dt": "2026-10-17",
+  "v": "20:00 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43243138-hp-zinker-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Heavysaurus",
+  "dt": "2026-10-17",
+  "v": "14:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42723664-heavysaurus-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Heavysaurus",
+  "dt": "2026-10-17",
+  "v": "17:30 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42723665-heavysaurus-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Mike Leon Grosch",
+  "dt": "2026-10-17",
+  "v": "20:00 · Portofino",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42980184-mike-leon-grosch-at-portofino",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Now",
+  "dt": "2026-10-17",
+  "v": "The Loft Vienna",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43166672-now-at-loft-vienna",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Tarja Turunen",
+  "dt": "2026-10-17",
+  "v": "19:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43050441-tarja-turunen-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2026)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Joshua Chuquimia Crampton",
+  "dt": "2026-11-02",
+  "v": "19:30 · Flucc Wanne",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43459848-joshua-chuquimia-crampton-at-flucc-wanne",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Musicalstars! - Vienna Leading Ladies",
+  "dt": "2027-02-13",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51554/Musicalstars-Vienna-Leading-Ladies",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "An Evening with Gabor Maté",
+  "dt": "2027-03-17",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51544/An-Evening-with-Gabor-Mate",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-13"
+ },
+ {
+  "n": "Nickelback",
+  "dt": "2027-06-25",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51550/Nickelback",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-13"
  }
 ]
