@@ -13645,5 +13645,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-13"
+ },
+ {
+  "n": "Oktagon 103",
+  "dt": "2027-02-20",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51556/Oktagon-103",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-14"
  }
 ]
