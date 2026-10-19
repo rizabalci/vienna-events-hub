@@ -14728,5 +14728,43 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-10-18"
+ },
+ {
+  "n": "Ricky Gervais",
+  "dt": "2027-04-24",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51560/Ricky-Gervais",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-19"
+ },
+ {
+  "n": "Andreas Gabalier",
+  "dt": "2027-11-06",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51558/Andreas-Gabalier",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-19"
  }
 ]
