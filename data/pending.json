@@ -16020,5 +16020,43 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-24"
+ },
+ {
+  "n": "Rock in Peace",
+  "dt": "2026-12-02",
+  "v": "Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43405474-rock-in-peace-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-10-26"
+ },
+ {
+  "n": "Luke Andrews Band",
+  "dt": "2026-12-03",
+  "v": "19:00 · Ehemaliges Zentral Kino Wiener Neustadt",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43457250-luke-andrews-band-at-ehemaliges-zentral-kino-wiener-neustadt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+2 months)",
+  "_found": "2026-10-26"
  }
 ]
