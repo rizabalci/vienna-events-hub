@@ -16362,5 +16362,43 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-10-27"
+ },
+ {
+  "n": "Dawood Sarkhosh",
+  "dt": "2027-01-09",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51572/Dawood-Sarkhosh",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-28"
+ },
+ {
+  "n": "Till Lindemann",
+  "dt": "2027-11-17",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51570/Till-Lindemann",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-28"
  }
 ]
