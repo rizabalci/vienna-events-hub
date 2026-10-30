@@ -16400,5 +16400,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-28"
+ },
+ {
+  "n": "Das Weihnachtspostamt",
+  "dt": "2026-12-23",
+  "v": "Stadthalle Studio F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51574/Das-Weihnachtspostamt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-10-30"
  }
 ]
