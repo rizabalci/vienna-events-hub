@@ -16419,5 +16419,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-10-30"
+ },
+ {
+  "n": "Moritz Molnar",
+  "dt": "2027-01-15",
+  "v": "19:30 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43488152-moritz-molnar-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (2027)",
+  "_found": "2026-11-01"
  }
 ]
