@@ -16590,5 +16590,43 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-02"
+ },
+ {
+  "n": "Xavier Naidoo",
+  "dt": "2027-02-21",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51582/Xavier-Naidoo",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-03"
+ },
+ {
+  "n": "Let´s Dance 2027",
+  "dt": "2027-11-08",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51584/Lets-Dance-2027",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-03"
  }
 ]
