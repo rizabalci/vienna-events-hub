@@ -16628,5 +16628,43 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-03"
+ },
+ {
+  "n": "Rebellia [1991]",
+  "dt": "2027-01-23",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51586/Rebellia-1991",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-04"
+ },
+ {
+  "n": "André Rieu 2027",
+  "dt": "2027-11-12",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51588/Andre-Rieu-2027",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-04"
  }
 ]
