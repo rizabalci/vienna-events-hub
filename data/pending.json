@@ -16704,5 +16704,632 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-05"
+ },
+ {
+  "n": "Mina Richman",
+  "dt": "2026-11-07",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42887945-mina-richman-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Nino De Angelo",
+  "dt": "2026-11-07",
+  "v": "20:00 · Portofino",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42978335-nino-de-angelo-at-portofino",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Schattenwelt Festival 2026",
+  "dt": "2026-11-07",
+  "v": "16:30 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/festivals/1412884-schattenwelt/id/43114392-schattenwelt-festival-2026",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Disney",
+  "dt": "2026-11-08",
+  "v": "19:00 · Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43296413-disney-at-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Future3",
+  "dt": "2026-11-08",
+  "v": "Rhiz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43188063-future3-at-rhiz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Hatebreed",
+  "dt": "2026-11-08",
+  "v": "19:30 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43319268-hatebreed-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "The Meltdown (AU)",
+  "dt": "2026-11-08",
+  "v": "20:30 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43088155-meltdown-au-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Vioflesh",
+  "dt": "2026-11-08",
+  "v": "das LOT",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43077391-vioflesh-at-das-lot",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Zimmer90",
+  "dt": "2026-11-08",
+  "v": "20:00 · Ottakringer Brauerei",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43024056-zimmer90-at-ottakringer-brauerei",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Branford Marsalis",
+  "dt": "2026-11-09",
+  "v": "19:30 · Großer Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43392303-branford-marsalis-at-grosser-saal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "David Eugene Edwards",
+  "dt": "2026-11-09",
+  "v": "FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43205681-david-eugene-edwards-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Drawn And Quartered",
+  "dt": "2026-11-09",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43386254-drawn-and-quartered-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Mine",
+  "dt": "2026-11-09",
+  "v": "20:00 · Ottakringer Brauerei",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42936148-mine-at-ottakringer-brauerei",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Billylildove",
+  "dt": "2026-11-10",
+  "v": "19:30 · Café, Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43301124-billylildove-at-cafe-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Gloryhammer",
+  "dt": "2026-11-10",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42942245-gloryhammer-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Kokoskuss",
+  "dt": "2026-11-10",
+  "v": "Superbude Wien Prater",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43459365-kokoskuss-at-superbude-wien-prater",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Manu Delago",
+  "dt": "2026-11-10",
+  "v": "19:30 · Berio Saal, Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43392511-manu-delago-at-berio-saal-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Mary Broadcast",
+  "dt": "2026-11-10",
+  "v": "Loop",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43415651-mary-broadcast-at-loop",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Placebo",
+  "dt": "2026-11-10",
+  "v": "19:30 · Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43118919-placebo-at-halle-d-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "PRESIDENT",
+  "dt": "2026-11-10",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43306911-president-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "The Browning, Within Destruction, and Abbie Falls",
+  "dt": "2026-11-10",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43289746-browning-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "William Jack",
+  "dt": "2026-11-10",
+  "v": "19:00 · Café 7stern",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43452311-william-jack-at-cafe-7stern",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Bob Dylan",
+  "dt": "2026-11-11",
+  "v": "20:00 · Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43327216-bob-dylan-at-halle-d-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Dad Harmony",
+  "dt": "2026-11-11",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42942367-dad-harmony-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Davina Michelle",
+  "dt": "2026-11-11",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43064204-davina-michelle-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Jack and the Weatherman",
+  "dt": "2026-11-11",
+  "v": "19:00 · Flucc Wanne",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42984186-jack-and-the-weatherman-at-flucc-wanne",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Kimyan and Mamadou Diabate",
+  "dt": "2026-11-11",
+  "v": "ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43452378-kimyan-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Monolord",
+  "dt": "2026-11-11",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43135100-monolord-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "STVW",
+  "dt": "2026-11-11",
+  "v": "Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43108540-stvw-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Jazz Gitti",
+  "dt": "2026-12-02",
+  "v": "18:00 · U4",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43496901-jazz-gitti-at-u4",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "MaIIja",
+  "dt": "2026-12-02",
+  "v": "19:30 · Haus der Musik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43499471-maiija-at-haus-der-musik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "Takeshi's Cashew",
+  "dt": "2026-12-03",
+  "v": "Kollektiv Kaorle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43502080-takeshis-cashew-at-kollektiv-kaorle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (+1 month)",
+  "_found": "2026-11-06"
+ },
+ {
+  "n": "INSIEME",
+  "dt": "2027-10-01",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51596/INSIEME",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-06"
  }
 ]
