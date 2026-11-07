@@ -17331,5 +17331,195 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-06"
+ },
+ {
+  "n": "Bob Dylan",
+  "dt": "2026-11-12",
+  "v": "20:00 · Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43327217-bob-dylan-at-halle-d-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Carnifex",
+  "dt": "2026-11-12",
+  "v": "17:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43161683-carnifex-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Despised Icon",
+  "dt": "2026-11-12",
+  "v": "Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43161628-despised-icon-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Erdling",
+  "dt": "2026-11-12",
+  "v": "Viper Room",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43194765-erdling-at-viper-room",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Gautier Capuçon, Orchestre Philharmonique De Radio France, Jaap Van Zweden, and Renaud Capuçon",
+  "dt": "2026-11-12",
+  "v": "Wiener Konzerthaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43380989-gautier-capucon-at-wiener-konzerthaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "IKAN HYU",
+  "dt": "2026-11-12",
+  "v": "20:00 · Chelsea",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43144595-ikan-hyu-at-chelsea",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "King No-One",
+  "dt": "2026-11-12",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43199076-king-noone-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Little Barrie",
+  "dt": "2026-11-12",
+  "v": "19:30 · Rhiz",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43204553-little-barrie-at-rhiz",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Myles Sanko",
+  "dt": "2026-11-12",
+  "v": "20:30 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43304774-myles-sanko-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
+ },
+ {
+  "n": "Onk Lou",
+  "dt": "2026-11-12",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43240551-onk-lou-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-07"
  }
 ]
