@@ -17521,5 +17521,157 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-11-07"
+ },
+ {
+  "n": "Danielle Nicole",
+  "dt": "2026-11-13",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43126362-danielle-nicole-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "Julia buchner",
+  "dt": "2026-11-13",
+  "v": "20:00 · Portofino",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42978330-julia-buchner-at-portofino",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "Leap",
+  "dt": "2026-11-13",
+  "v": "20:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43379239-leap-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "Romeo",
+  "dt": "2026-11-13",
+  "v": "Halle F, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42885474-romeo-at-halle-f-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "SarahBernhardt",
+  "dt": "2026-11-13",
+  "v": "19:30 · Stadtsaal",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43174880-sarahbernhardt-at-stadtsaal",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "Sigi Finkel",
+  "dt": "2026-11-13",
+  "v": "19:30 · Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287206-sigi-finkel-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "Thunderballs",
+  "dt": "2026-11-13",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43128262-thunderballs-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
+ },
+ {
+  "n": "Tim Fischer",
+  "dt": "2026-11-13",
+  "v": "Theater Akzent",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42988815-tim-fischer-at-theater-akzent",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-08"
  }
 ]
