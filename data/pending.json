@@ -18737,5 +18737,195 @@
   ],
   "_src": "Songkick Vienna (2027)",
   "_found": "2026-11-13"
+ },
+ {
+  "n": "James Harries",
+  "dt": "2026-11-18",
+  "v": "19:30 · Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43211398-james-harries-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Lungau Big Band",
+  "dt": "2026-11-18",
+  "v": "19:30 · Stadttheater Wiener Neustadt",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43153763-lungau-big-band-at-stadttheater-wiener-neustadt",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Chameleons",
+  "dt": "2026-11-19",
+  "v": "20:00 · Szene Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43153717-chameleons-at-szene-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Diana Arbenina",
+  "dt": "2026-11-19",
+  "v": "20:00 · Simm City",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43383094-diana-arbenina-at-simm-city",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Hans Theessink",
+  "dt": "2026-11-19",
+  "v": "19:30 · Orpheum Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43012586-hans-theessink-at-orpheum-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Haunt Me",
+  "dt": "2026-11-19",
+  "v": "19:30 · Weberknecht",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43252452-haunt-me-at-weberknecht",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Xzibit",
+  "dt": "2026-11-19",
+  "v": "20:00 · Werkstätten- & Kulturhaus (WUK)",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43374094-xzibit-at-werkstatten-and-kulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "KPop Demon Hunters",
+  "dt": "2027-09-12",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51610/KPop-Demon-Hunters",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Der Nussknacker - Imperial Ballet & Live Orchester",
+  "dt": "2027-12-25",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51600/Der-Nussknacker-Imperial-Ballet-amp-Live-Orchester",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-14"
+ },
+ {
+  "n": "Schwanensee - Imperial Ballet & Live Orchester",
+  "dt": "2027-12-26",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51602/Schwanensee-Imperial-Ballet-amp-Live-Orchester",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-14"
  }
 ]
