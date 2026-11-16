@@ -19174,5 +19174,62 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-11-15"
+ },
+ {
+  "n": "21. Kabarettgipfel",
+  "dt": "2027-04-13",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51612/21-Kabarettgipfel",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-16"
+ },
+ {
+  "n": "Die Nacht der Filmmusik 2027",
+  "dt": "2027-12-04",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51616/Die-Nacht-der-Filmmusik-2027",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-16"
+ },
+ {
+  "n": "Ben Becker liest \"Eine Weihnachtsgeschichte\"",
+  "dt": "2027-12-05",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51614/Ben-Becker-liest-quotEine-Weihnachtsgeschichtequot",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-16"
  }
 ]
