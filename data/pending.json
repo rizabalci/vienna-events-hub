@@ -19820,5 +19820,138 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-18"
+ },
+ {
+  "n": "Filow",
+  "dt": "2026-11-23",
+  "v": "20:00 · Raiffeisen Halle im Gasometer",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43249247-filow-at-raiffeisen-halle-im-gasometer",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
+ },
+ {
+  "n": "Hans Theessink",
+  "dt": "2026-11-23",
+  "v": "20:00 · Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43108398-hans-theessink-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
+ },
+ {
+  "n": "Howie Day",
+  "dt": "2026-11-23",
+  "v": "20:00 · Club Lucia",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43396874-howie-day-at-club-lucia",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
+ },
+ {
+  "n": "Molden",
+  "dt": "2026-11-23",
+  "v": "Metropol",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43108559-molden-at-metropol",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
+ },
+ {
+  "n": "Nand",
+  "dt": "2026-11-24",
+  "v": "20:00 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43199288-nand-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
+ },
+ {
+  "n": "Nieve Ella",
+  "dt": "2026-11-24",
+  "v": "20:00 · Grelle Forelle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43343770-nieve-ella-at-grelle-forelle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
+ },
+ {
+  "n": "Terror",
+  "dt": "2026-11-24",
+  "v": "19:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43327193-terror-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-19"
  }
 ]
