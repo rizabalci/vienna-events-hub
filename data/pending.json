@@ -19953,5 +19953,43 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-11-19"
+ },
+ {
+  "n": "Aca Lukas",
+  "dt": "2027-04-03",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51621/Aca-Lukas",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-20"
+ },
+ {
+  "n": "Dick Brave",
+  "dt": "2027-11-22",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51630/Dick-Brave",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-20"
  }
 ]
