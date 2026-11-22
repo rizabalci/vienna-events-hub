@@ -19991,5 +19991,537 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-20"
+ },
+ {
+  "n": "David McCredie",
+  "dt": "2026-11-24",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43204549-david-mccredie-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Gautier Capuçon, Gewandhausorchester Leipzig, and Andris Nelsons",
+  "dt": "2026-11-24",
+  "v": "Musikverein",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43380952-gautier-capucon-at-musikverein",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Monobrother",
+  "dt": "2026-11-24",
+  "v": "20:00 · ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43439478-monobrother-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Atomic Rooster",
+  "dt": "2026-11-25",
+  "v": "20:30 · Reigen Live",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43492166-atomic-rooster-at-reigen-live",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Cordoba78",
+  "dt": "2026-11-25",
+  "v": "20:00 · Werkstätten- & Kulturhaus (WUK)",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43187701-cordoba78-at-werkstatten-and-kulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Eluveitie",
+  "dt": "2026-11-25",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43024065-eluveitie-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Martin Listabarth",
+  "dt": "2026-11-25",
+  "v": "19:30 · ORF RadioKulturhaus",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43439479-martin-listabarth-at-orf-radiokulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "OneUs",
+  "dt": "2026-11-25",
+  "v": "19:00 · Simm City Festsaal, Zentrum Simmering",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43457830-oneus-at-simm-city-festsaal-zentrum-simmering",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Petaw Band",
+  "dt": "2026-11-25",
+  "v": "19:00 · Museum St. Peter an der Sperr",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43500014-petaw-band-at-museum-st-peter-an-der-sperr",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "S.P.Y",
+  "dt": "2026-11-25",
+  "v": "19:00 · Arena Wien",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43226179-spy-at-arena-wien",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Tara",
+  "dt": "2026-11-25",
+  "v": "20:00 · dasWERK",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43396798-tara-at-daswerk",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "The Last Internationale",
+  "dt": "2026-11-25",
+  "v": "20:00 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43226165-last-internationale-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Baba Yaga",
+  "dt": "2026-11-26",
+  "v": "19:30 · Sargfabrik",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43287558-baba-yaga-at-sargfabrik",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Billy Liar and Joe Mcmahon (Smoke Or Fire)",
+  "dt": "2026-11-26",
+  "v": "20:30 · Beertija Pub",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43459442-billy-liar-at-beertija-pub",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Catt",
+  "dt": "2026-11-26",
+  "v": "20:30 · Porgy & Bess",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43153709-catt-at-porgy-and-bess",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Chapo102",
+  "dt": "2026-11-26",
+  "v": "20:00 · Werkstätten- & Kulturhaus (WUK)",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43015648-chapo102-at-werkstatten-and-kulturhaus",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Chinchilla",
+  "dt": "2026-11-26",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42944831-chinchilla-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Lahra",
+  "dt": "2026-11-26",
+  "v": "19:30 · B72",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43234452-lahra-at-b72",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Liz Rosa",
+  "dt": "2026-11-26",
+  "v": "19:00 · Leftbank Art Space",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43446035-liz-rosa-at-leftbank-art-space",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "William Wahl",
+  "dt": "2026-11-26",
+  "v": "Theater Akzent",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42639532-william-wahl-at-theater-akzent",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Bonez MC & RAF Camora",
+  "dt": "2026-11-27",
+  "v": "20:00 · Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43351794-bonez-mc-and-raf-camora-at-halle-d-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Bragolin and Carrellee",
+  "dt": "2026-11-27",
+  "v": "The Chamber - Bar",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43376555-bragolin-at-chamber-bar",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Jugo Ürdens",
+  "dt": "2026-11-27",
+  "v": "20:00 · Flex",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43290048-jugo-urdens-at-flex",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Misha Piatigorsky Trio",
+  "dt": "2026-11-27",
+  "v": "19:00 · Leftbank Art Space",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43446036-misha-piatigorsky-trio-at-leftbank-art-space",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Muff Potter",
+  "dt": "2026-11-27",
+  "v": "19:30 · FLUCC",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43040672-muff-potter-at-flucc",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Raf Camora",
+  "dt": "2026-11-27",
+  "v": "Halle D, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/43351902-raf-camora-at-halle-d-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Ulli Bäer",
+  "dt": "2026-11-27",
+  "v": "20:00 · Donauhof Zwentendorf",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42891665-ulli-baer-at-donauhof-zwentendorf",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
+ },
+ {
+  "n": "Zebrahead and Me First And The Gimme Gimmes",
+  "dt": "2026-11-27",
+  "v": "16:00 · Halle E, Wiener Stadthalle",
+  "c": "concert",
+  "p": "",
+  "u": "songkick.com",
+  "eu": "https://www.songkick.com/concerts/42939725-zebrahead-at-halle-e-wiener-stadthalle",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "songkick"
+  ],
+  "_src": "Songkick Vienna (upcoming)",
+  "_found": "2026-11-22"
  }
 ]
