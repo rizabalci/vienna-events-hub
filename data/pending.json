@@ -20523,5 +20523,43 @@
   ],
   "_src": "Songkick Vienna (upcoming)",
   "_found": "2026-11-22"
+ },
+ {
+  "n": "Schwanensee - UCB",
+  "dt": "2027-02-20",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51634/Schwanensee-UCB",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-23"
+ },
+ {
+  "n": "Roger Waters Presents LEGACY",
+  "dt": "2027-11-05",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51632/Roger-Waters-Presents-LEGACY",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-23"
  }
 ]
