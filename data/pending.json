@@ -20561,5 +20561,24 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-23"
+ },
+ {
+  "n": "KANSAS",
+  "dt": "2027-06-16",
+  "v": "Stadthalle Halle F",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51636/KANSAS",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-24"
  }
 ]
