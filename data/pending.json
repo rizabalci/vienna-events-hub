@@ -20580,5 +20580,43 @@
   ],
   "_src": "Wiener Stadthalle (official calendar)",
   "_found": "2026-11-24"
+ },
+ {
+  "n": "Chase Atlantic",
+  "dt": "2027-04-19",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51638/Chase-Atlantic",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-26"
+ },
+ {
+  "n": "Heilung",
+  "dt": "2027-11-26",
+  "v": "Stadthalle Halle D",
+  "c": "concert",
+  "p": "",
+  "u": "stadthalle.com",
+  "eu": "https://www.stadthalle.com/de/events/alle-events/51640/Heilung",
+  "desc": {
+   "en": "",
+   "de": ""
+  },
+  "t": [
+   "feed",
+   "stadthalle"
+  ],
+  "_src": "Wiener Stadthalle (official calendar)",
+  "_found": "2026-11-26"
  }
 ]
